@@ -1,0 +1,1557 @@
+.absolute_header {
+    /* Fondo con el color y opacidad especificados: #101935 con opacidad E5 (229/255 = ~90% opacidad) */
+    background-color: #8489E3E5 !important; /* El !important puede ser necesario si otras clases de Bootstrap lo están sobrescribiendo. */
+    
+    /* Para que sea un "absolute header" y se superponga al contenido de la sección siguiente */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030; /* Asegura que esté por encima de otros elementos */
+}
+
+.absolute_header {
+  position: fixed; /* fija el header al viewport */
+  top: 0; /* alinea en la parte superior */
+  left: 0;
+  width: 100%; /* que ocupe todo el ancho */
+  z-index: 9999; /* asegura que esté por encima de todo el contenido */
+  background-color: rgba(255, 255, 255, 0.98); /* fondo visible (ajústalo a tu tema) */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* efecto sutil al scrollear */
+  transition: all 0.3s ease-in-out; /* animación suave si cambia tamaño/color */
+}
+
+/* 🖋️ Estilos para el texto de la navegación */
+.navbar-nav .nav-link {
+    color: #FFFFFF !important; /* Texto de los enlaces en blanco */
+    font-weight: 600; /* Le da un poco más de cuerpo a la tipografía */
+    padding-right: 5px !important; /* Espacio entre los elementos del menú */
+    padding-left: 5px !important; 
+    font-size: 18px;
+    white-space: nowrap; 
+}
+
+.agendar-header {
+  font-size: 20px !important;
+}
+
+/* 🖼️ Estilo para el Logo y el Texto del Logo */
+.navbar-brand {
+    display: flex; /* Para alinear el logo y el texto "DESIGN STUDIO" */
+    align-items: center;
+}
+
+/* 🟢 Estilos para el Botón "AGENDAR" */
+.btn-agendar {
+    /* Fondo del botón (el color celeste/verde agua de la imagen) */
+    background-color: #111344; 
+    border-radius: 50px; /* Bordes redondeados */
+    color: #FFF !important; /* Color de texto más oscuro para el botón */
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    border: none;
+    line-height: 0.5 !important; /* Ajusta la altura del texto en el botón */
+}
+
+.btn-agendar:hover {
+    background-color: #9ac2d0;
+}
+
+.etcodes-normal-logo {
+    width: 28% !important;
+    margin-left: -90px !important;
+}
+
+.texto-header {
+    max-width: 100%;
+    width: 100%;
+    line-height: 1.1;
+    font-size: 64px; 
+    font-weight: 600 !important;
+    color: #fff; 
+    display: block;
+    letter-spacing: 1px; 
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+    text-align: left;
+    margin-bottom: 30px !important;
+}
+
+.texto-header2 {
+    width: 100%;
+    max-width: 100%;
+    font-size: 20px !important;
+}
+
+.boton1 {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.texto-diseno {
+    font-size: 25px;
+    width: 100%;
+    max-width: 100%;
+    margin-left: -60px !important;
+    margin-top: 20px;
+}
+
+.texto-pres {
+    font-size: 17px;
+    width: 115%;
+    max-width: 150%;
+    font-weight: 50 !important;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.boton2 {
+    font-size: 20px;
+    font-weight: 600;
+    border-width: 3px;
+}
+
+.boton-presentacion {
+  margin-right: 305px;
+}
+
+.bg-color-darkblue {
+  background-color: #8489E3; 
+  color: #FFFFFF;
+}
+
+.footer-contact-bar {
+  background-color: #A8ACF4;
+  padding: 1px 0;
+  border-bottom-left-radius: 140px;
+  border-bottom-right-radius: 140px;
+  padding-top: 20px;
+  padding-bottom:-20px !important;
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #8489E3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.footer-info {
+  margin-bottom: -10px !important;
+  padding: 0px !important;
+}
+
+.icon-circle i {
+  color: #FFFFFF;
+  font-size: 26px;
+}
+
+/* Contenido del texto */
+.contact-text h5.widget-title {
+  font-size: 18px;
+  font-weight: 100 !important;
+  color: #FFF;
+  margin-bottom: 3px;
+  text-align: left;
+}
+
+.contact-text p {
+  font-size: 18px;
+  font-weight: 800 !important;
+  color: #ffffff;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.email-footer {
+  margin-left: -80px;
+}
+
+.ubi-footer {
+  margin-left: -80px;
+}
+
+.foot-desc {
+  font-size: 20px;
+}
+
+/* Logo y redes */
+.footer-logo-section {
+  background-color: #8489E3;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 350px;
+  height: auto;
+  margin-bottom: -10px !important;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  margin-left: 550px;
+}
+
+.footer-description {
+  font-weight: 500 !important;
+  font-size: 15px;
+  margin-bottom: 0px !important;
+}
+
+.description-copyright {
+  font-style: italic;
+  font-weight: 100 !important;
+  font-size: 14px;
+  margin-bottom: 2px !important;
+}
+
+.social-icons .list-inline-item a {
+  color: #FFFFFF;
+  font-size: 30px;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.social-icons .list-inline-item a:hover {
+  color: #8db5c4;
+}
+
+/* Copyright */
+.footer-copyright {
+  background-color: #A8ACF4;
+  font-size: 14px;
+  color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer-copyright a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-copyright a:hover {
+  color: #8489E3;
+}
+
+.subtitulo-nosotros {
+    color: #FFF;
+    font-weight: 300;
+}
+
+.texto-diseno {
+    width: 100%;
+    max-width: 100%;
+    font-size: 25px;
+}
+
+.texto-relleno {
+    width: 100%;
+    max-width: 100%;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 10 !important;
+}
+
+.mb-2 {
+    font-size: 28px;
+    font-weight: 520;
+}
+
+.blockquote-footer {
+    font-weight: 550;
+}
+
+.texto-mel {
+    font-size: 18px;
+    width: 100%;
+    font-weight: 10 !important;
+}
+
+.texto-equipo {
+    font-size: 17px;
+    font-weight: 100 !important;
+    margin-bottom: 40px !important;
+}
+
+.nombre-test {
+  font-size: 18px;
+  margin-bottom: 0px !important;
+  margin-top: 20px;
+}
+
+.descrip-test {
+  font-size: 16px; 
+  font-weight: 100;
+}
+
+.boton-nosotros {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.rounded-0 {
+  border-radius: 100px !important;
+  padding: 15px;
+}
+
+.titulo-foot {
+  text-align: center;
+  font-size: 25px;
+}
+
+.texto-foot {
+  font-size: 18px;
+  font-weight: 100;
+  justify-content:center;
+  line-height: 25px;
+}
+
+.pt-80px {
+  padding-top: 70px !important;
+  margin-top: 50px;
+}
+
+.testimonial-titulo {
+  font-size: 30px;
+}
+
+.pb-55px {
+  padding-bottom: 40px !important;
+  padding-top: 60px !important;
+  margin-bottom: 70px !important;
+  margin-top: 0px !important;
+}
+
+.boton-detalles {
+  margin-left: 450px;
+}
+
+.space-footer {
+  padding: 10px; 
+}
+
+.texto-intro {
+  text-align: center;
+  font-size: 18px; 
+  font-style:italic;
+  margin-bottom: 60px;
+  font-weight: 100;
+}
+
+.boton-servicios {
+  border-radius: 0px !important;
+  padding: 7px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.imagen-hover1 {
+  background-image: url('images/mgv/servicios/servicio1-antes.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.imagen-hover1:hover {
+  background-image: url('images/mgv/servicios/servicio1-antes.jpg'); /* imagen alternativa */
+}
+
+.imagen-hover1 img {
+  display: none; /* ocultamos el <img> porque usamos background */
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25D366; 
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 28px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.1);
+}
+
+.navbar-dark .navbar-toggler {
+  color: #FFF !important;
+}
+
+.py-120px {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
+@media screen and (max-width:1024px) {
+  .py-120px {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;}
+  .px-60px {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+  .mb-2 {
+    font-size: 25px;
+  }
+  .texto-mel {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .pt-85px {
+    padding-top: 40px !important;
+  }
+  .mb-10px {
+    font-size: 25px !important;
+    margin-bottom: 20px !important;
+  }
+  .texto-equipo {
+    font-size: 17px;
+  }
+  .nombre-test {
+    font-size: 22px !important;
+    margin-bottom: 5px !important; 
+  }
+  .descrip-test {
+    font-size: 20px !important;
+    margin-top: 0px !important;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .titulo-foot {
+    font-size: 23px;
+  }
+  .texto-foot {
+    font-size: 18px; 
+    text-align:center;
+  }
+  .boton-nosotros {
+    justify-content: center !important;
+  }
+  .mb-30px {
+    justify-content: center !important;
+  }
+}
+
+.mt-80px {
+  margin-top: 60px !important;
+}
+
+.container-servicios {
+  width: 100%;
+  max-width: 1140px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.imagen-diseño {
+  background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.mb-20px {
+  margin-bottom: 5px !important; 
+}
+
+.texto-cotizacion {
+  font-size: 18px;
+  font-weight: 100 !important;
+  margin-bottom: 10px;
+}
+
+.texto-servicio1 {
+  font-size: 15px;
+}
+
+.preguntas-texto {
+  font-size: 30px;
+}
+
+.contenedor-servicio {
+  min-height: 300px; /* Ajusta según prefieras: 350px, 450px, etc. */
+  height: auto;
+  align-items: stretch !important; /* Asegura que ambas columnas tengan la misma altura */
+}
+
+.contenedor-servicio .col-lg-6 {
+  height: 100%; /* Hace que las columnas ocupen todo el alto */
+}
+
+.py-80px {
+  padding: 0px !important; 
+}
+
+.container-blog {
+  margin: 70px !important;
+  margin-top: 40px;
+}
+
+.pad-blog {
+  padding-left: 20px;
+  padding-right: 35px !important;
+}
+
+.blog-title {
+  font-size: 30px;
+}
+
+.blog-description {
+  font-size: 17px;
+  font-weight: 100 !important;
+}
+
+.post_title {
+  font-size: 18px;
+  margin-bottom: 0px !important;
+}
+
+.blog-date {
+  font-size: 16px !important;
+}
+
+.blog-parrafo {
+  font-size: 17px;
+  font-weight: 100 !important;
+}
+
+.boton-blog {
+  margin-left: 550px;
+}
+
+.whatsapp-card {
+    background-color: #1C284A; /* azul oscuro similar al de la imagen */
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    border: 2px solid #1C284A;
+    border-radius: 4px; /* puedes cambiar a 0 si quieres esquinas cuadradas */
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.whatsapp-icon {
+    font-size: 90px; /* tamaño del ícono */
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.whatsapp-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #FFF;
+}
+
+.whatsapp-text {
+    font-size: 18px;
+    color: #FFF;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.whatsapp-number {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+    color: #FFF;
+}
+
+.titulo-blog1 {
+  font-size: 30px;
+}
+
+.fecha-blog {
+  font-size: 16px;
+  font-weight: 100 !important;
+}
+
+.contenido-blog {
+  font-size: 17px;
+}
+
+.quote-blog1 {
+  font-size: 27px;
+  font-weight: 550;
+}
+
+.mb-35px {
+  width: 100%;
+  height: 80%;
+  font-size: 18px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+}
+
+.nombre-blog {
+  font-size: 20px;
+}
+
+.fecha-blog {
+  font-size: 16px;
+}
+
+.boton-articulo {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Contenedor general */
+.seccion-contacto {
+    text-align: center;
+}
+
+
+.titulo-contacto {
+    font-size: 28px;
+    font-weight: 600;
+    color: #111630;
+    margin-bottom: 20px !important;
+}
+
+.texto-contacto {
+    color: #7a7a7a;
+    font-size: 18px;
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Cuadros de contacto */
+.card-contacto {
+    border: 2px solid #111630;
+    padding: 50px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    height: 100%;
+}
+
+.card-contacto:hover {
+    background-color: #111630;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.card-contacto:hover .icon-contacto {
+    color: #fff;
+}
+
+.icon-contacto {
+    font-size: 48px;
+    color: #111630;
+    margin-bottom: 20px;
+}
+
+.titulo-card {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.texto-card {
+    font-size: 16px;
+    color: #111630;
+    margin: 0;
+}
+
+/* Mapa */
+.mapa-contacto iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 4px;
+}
+
+.boton2 {
+  border-radius: 0px !important;
+  padding: 15px 30px !important;
+  background-color: #FFFFFF;
+  color: #000 !important;
+}
+
+.contenedor-azul {
+  background-color: #8489E3 !important;
+}
+
+.titulo-carrusel {
+  font-size: 26px;
+  margin-top: -40px !important;
+  margin-bottom: 20px !important;
+}
+
+.titulo-cali {
+  width: 300%;
+}
+
+.texto-carrusel {
+  font-size: 17px;
+  font-weight: 100 !important;
+  margin-bottom: 60px !important;
+}
+
+.texto-italic {
+  font-style: italic;
+  font-weight: 100 !important;
+  font-size: 16px;
+}
+
+.boton3 {
+  color: #000;
+  border-color: #000;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0px;
+}
+/*inicio de edicion*/
+
+.servicios-title {
+  font-size: 1.8rem !important;
+  font-weight: 600 !important;
+  color: #1C1C1C !important;
+  margin-bottom: 35px !important;
+}
+
+.bg-color-creamy {
+  background-color: #F1FFFA !important;
+  border: none !important;
+  border-radius: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  min-height: 280px !important;
+}
+
+.bg-color-creamy img,
+.imagen-diseno {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.p-25px {
+  padding: 40px 35px !important;
+}
+
+/* Botón “Agendar asesoría” */
+.boton3 {
+  color: #0A0A23;
+  border: 2px solid #0A0A23;
+  font-weight: 700;
+  padding: 10px 25px;
+  text-transform: none;
+  border-radius: 0;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.boton3:hover {
+  background-color: #0A0A23;
+  color: #fff;
+}
+
+/* Alineación final del botón de detalles */
+.boton-detalles {
+  border: 2px solid #000;
+  padding: 12px 40px;
+  font-weight: 600;
+}
+
+/* Ajuste para filas */
+.mb-30px {
+  margin-bottom: 40px !important;
+}
+
+/* Alinear la fila final */
+.justify-content-center {
+  justify-content: center !important;
+}
+
+
+/*fin de edicion*/
+
+.boton-detalles {
+  color: #000;
+  border-color: #000;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.boton-inicio {
+  padding: 15px 50px !important;
+  font-size: 22px !important;
+}
+
+.d-flex {
+    justify-content: center !important; 
+}
+
+.contenedor-boton-centrado {
+    display: flex;
+    justify-content: center;
+}
+
+
+.full-width-banner {
+    width: 100%;
+    height: 350px; /* Mantener altura */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+    margin-top: 50px;
+}
+
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.10); 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+
+.banner-title {
+    color: #FFFFFF; 
+    font-size: 40px;
+    font-weight: 700; 
+    margin-bottom: 20px; 
+    line-height: 1.2;
+    max-width: 100%; 
+    margin-left: 0px;
+    margin-right: 0px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+.banner-subtitle {
+    color: #FFFFFF; 
+    font-size: 30px !important; 
+    font-weight: 300; 
+    margin-bottom: 40px; 
+    line-height: 1.5;
+    max-width: 100%; 
+    margin-left: 0px;
+    margin-right: 0px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+
+}
+
+.btn-whatsapp-banner {
+    background-color: transparent; 
+    color: #FFFFFF; /* Texto blanco */
+    /* Borde blanco para el efecto OUTLINE */
+    border: 2px solid #FFFFFF; 
+    padding: 15px 35px; 
+    font-size: 21px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    border-radius: 100px; /* Bordes ligeramente cuadrados/rectangulares */
+    text-decoration: none; 
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp-banner:hover {
+    /* Efecto de HOVER sutil: Fondo blanco semi-transparente */
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #FFFFFF; /* El texto se mantiene blanco */
+    cursor: pointer;
+}
+
+/* Ajustes de Responsividad (Asegura que el texto y el botón se vean bien en móvil) */
+@media (max-width: 991.98px) {
+    .full-width-banner { height: 500px; }
+    .banner-title { font-size: 40px; }
+    .banner-subtitle { font-size: 20px; }
+    .btn-whatsapp-banner { padding: 12px 30px; font-size: 16px; }
+}
+
+@media (max-width: 767.98px) {
+    .full-width-banner { height: 400px; }
+    .banner-title { font-size: 30px; }
+    .banner-subtitle { font-size: 16px; }
+    .btn-whatsapp-banner { padding: 10px 25px; font-size: 14px; }
+}
+
+/* Contenedor Principal de la Sección */
+.horarios-mapa-section {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.text-content-horarios {
+    background-color: #8489E3; 
+    color: #FFFFFF; 
+    display: flex;
+    align-items: center; 
+    min-height: 550px;
+}
+
+
+.horarios-content-wrapper {
+    padding: 30px 10px; 
+    max-width: 500px; 
+    width: 100%;
+    margin: 0 auto; 
+    margin-top: -80px;
+}
+
+
+.atencion-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #FFF;
+}
+
+.atencion-description, .horario-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px !important;
+    font-weight: 100 !important;
+}
+
+.atencion-description {
+  margin-bottom: 45px !important;
+}
+
+.horario-info {
+    margin-top: 25px;
+    margin-bottom: 35px; /* Espacio antes del botón */
+}
+
+.horario-texto {
+  margin-bottom: 2px !important;
+}
+
+/* Estilos del Botón "Agendar" (Outline) */
+.btn-agendar-mapa {
+    background-color: transparent; 
+    color: #FFFFFF; 
+    border: 4px solid #FFFFFF; 
+    padding: 12px 40px; 
+    font-size: 18px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    text-decoration: none;
+    border-radius: 0px; 
+    display: inline-block; 
+    transition: all 0.3s ease;
+    margin-top: 70px;
+}
+
+.btn-agendar-mapa:hover {
+    background-color: #FFFFFF;
+    color: #2D395B;
+    cursor: pointer;
+}
+
+.map-container {
+    min-height: 550px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 991.98px) {
+    .text-content-horarios {
+        min-height: auto; 
+    }
+    .horarios-content-wrapper {
+        padding: 50px 30px;
+    }
+    .map-container {
+        min-height: 350px;
+    }
+}
+
+.container-header {
+  margin: 0px;
+  margin-left: 90px;
+  justify-content: center;
+}
+
+.navbar-right {
+  margin-left: 100px;
+}
+
+.mb-70px {
+  margin: 70px;
+}
+
+.mb-50px {
+  margin: 70px;
+}
+
+.imagen-diseno {
+  width: 150%;
+}
+
+.direc-texto {
+  margin-bottom: 80px !important;
+}
+
+.banner-agenda {
+  font-size: 18px;
+  font-weight: 100 !important;
+  line-height: 25px;
+}
+
+.boton-blog {
+  color: #000;
+}
+
+.testimonial-santiago {
+  padding-bottom: 7px !important;
+}
+
+.texto-servicios {
+  font-size: 18px;
+  font-weight: 100 !important;
+}
+
+.titulo-nosotros {
+  font-size: 80px; 
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+}
+
+.subtitulo-nosotros {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+  font-size: 30px;
+}
+
+.bg-color-beige {
+  background-color: #FCFAED;
+}
+
+.contenedor-agenda {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  background-color: #D5C7BC !important;
+  margin-top: 60px !important;
+}
+
+.contenedor-agenda2 {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  background-color: #D5C7BC !important;
+  margin-top: -80px !important;
+}
+
+.contenedor-proyecto {
+  margin-top: 20px !important;
+}
+
+.titulo-proyecto {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.texto-proyecto {
+  font-size: 18px;
+  width: 130%;
+  margin-left: -115px;
+}
+
+.selector-proyecto {
+  font-size: 20px;
+  font-weight: 600 !important;
+}
+
+.titulo-sobre {
+  font-size: 28px;
+  margin-left: 9px !important;
+  margin-top: -15px;
+  margin-bottom: 30px !important;
+}
+
+.contenedor-team {
+  margin-bottom: 0px !important;
+}
+
+.titulo-servicios {
+  font-size: 80px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+}
+
+.subtitulo-servicios {
+  font-size: 30px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+}
+
+.contenedor-servicios {
+  margin: 0px !important;
+}
+
+.container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.margin-servicio {
+  padding-top: 15px;
+}
+
+.titulo-blog {
+  font-size: 80px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.subtitulo-blog {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.categorias {
+  font-size: 16px;
+}
+
+.widget.bg-color-gray {
+    background-color: #F1FFFA; 
+    width: 300px !important;
+    margin-left: -80px;
+}
+
+.widget-title {
+    font-size: 22px; 
+    font-weight: 550;
+    color: #333; 
+    margin-bottom: 30px;
+    padding-top: 0px; 
+    padding-left: 0px !important; 
+}
+
+/* Estilo del contenedor de cada item de la lista */
+.post-simple-list .media {
+    display: flex; /* Habilita Flexbox */
+    align-items: flex-start; /* Alinea el inicio del texto con el inicio del número */
+    margin-bottom: 10px !important; /* Espacio entre cada tip */
+    
+    /* Aplicamos el mismo padding horizontal que el título para alineación */
+    padding-left: 0px; 
+    padding-right: 0px; 
+}
+
+/* 🚨 El Número Grande (Selector CSS: span.reveal-title) */
+.post-simple-list .reveal-title {
+    /* Hace el número grande y llamativo */
+    font-size: 40px; 
+    font-weight: 300; /* Fuente delgada, como en la imagen */
+    color: #333;
+    line-height: 1.0; /* Asegura que la altura de la línea no afecte la alineación */
+    
+    /* Espacio a la derecha para separarlo del texto */
+    margin-right: 20px !important; 
+    
+    /* Asegura que no se rompa el número */
+    flex-shrink: 0; 
+}
+
+
+.post-simple-list .media-body {
+    padding-top: 10px; 
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+
+.post-simple-list .media-body a {
+    color: #333; 
+    font-size: 16px; 
+    line-height: 1.5;
+    font-weight: 100 !important; 
+    text-decoration: none; 
+    width: 100% !important;
+}
+
+.widget .bg-color-gray .px-30px {
+  padding: 0px !important;
+}
+
+.title-contact {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+  font-size: 80px;
+}
+
+.subtitulo-contacto {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.seccion-contacto {
+  padding-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.featured-products-section .section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 1.2rem;
+  margin-left: 15px;
+}
+
+.products {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-card {
+  width: 100%;
+}
+
+.product-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.product-img-wrapper img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  -o-object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.product-img-wrapper:hover img {
+  transform: scale(1.03);
+}
+
+.product-label {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(-50%) translateY(6px);
+  display: inline-block;
+  padding: 10px 110px;
+  border-radius: 18px;
+  background: #111344; 
+  color: #FFF;                    
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.2px;
+  text-transform: none;
+  opacity: 0;
+  pointer-events: none;              
+  transition: opacity 0.22s ease, transform 0.22s ease;
+  z-index: 3;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.product-img-wrapper:hover .product-label {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+.btn-add-to-cart {
+  display: none !important;
+}
+
+.product-meta {
+  padding: 0 6px;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  color: #111;
+}
+
+.product-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-price {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #8e8e8e;
+  font-weight: 100;
+}
+
+.products > li.product {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.featured-products-section .container {
+  max-width: 1280px;
+}
+
+.boton-tienda {
+  margin-left: 15px !important;
+  font-size: 22px !important;
+  padding: 15px 25px !important;
+}
+
+.contenedor-productos {
+  padding-bottom: 10px !important;
+}
+
+.boton2:hover,
+.boton-detalles:hover,
+.boton-inicio:hover,
+.boton-tienda:hover {
+  background-color: #111344 !important;
+  color: #FFF !important;
+  border-color: #111344 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.boton-nosotros:hover {
+  background-color: #111344 !important;
+  color: #FFF !important;
+  border-color: #111344 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.boton-nosotros {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-agendar,
+.agendar-header {
+  transition: all 0.3s ease-in-out !important;
+  transform: scale(1) !important;
+}
+
+.btn-agendar:hover,
+.agendar-header:hover {
+  transform: scale(1.08) !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.bg-color-green {
+  background-color: #F1FFFA;
+}
+
+.contenedor-catering {
+  padding-top: 0px !important;
+}
+
+.equipo-title {
+  margin-bottom: 20px !important;
+}
+
+.aliados-title {
+  margin-bottom:30px !important;
+}
+
+.texto-aliado {
+  font-size: 18px;
+}
+
+.catering-title {
+  font-size: 25px !important;
+  margin-bottom: 40px !important;
+  margin-left: -830px !important;
+}
+
+.deco-title {
+  font-size: 25px !important;
+  margin-bottom: 40px !important;
+  margin-left: -750px !important;
+}
+
+.contenedor-deco {
+  padding-top: 0px !important;
+  margin-top: -100px !important;
+}
+
+.mobi-title {
+  font-size: 25px !important;
+  margin-bottom: 40px !important;
+  margin-left: -860px !important;
+}
+
+.repo-title {
+  font-size: 25px !important;
+  margin-bottom: 40px !important;
+  margin-left: -850px !important;
+}
+
+.entretenimiento-title {
+  font-size: 25px !important;
+  margin-bottom: 40px !important;
+  margin-left: -720px !important;
+}
+
+.perso-title {
+  font-size: 25px !important;
+  margin-bottom: 40px !important;
+  margin-left: -860px !important;
+}
+
+.boton-agenda1 {
+  margin-bottom: -20px !important;
+}
+
+.boton-agenda2 {
+  margin-bottom: -20px !important;
+}
+
+.titulo-plan {
+  margin-top: 30px;
+}
+
+.texto-plan {
+  font-size: 17px;
+}
+
+.titulo-org {
+  margin-top: -20px;
+}
+
+.texto-org {
+  font-size: 17px;
+}
+
+.texto-bau {
+  font-size: 17px;
+}
+
+.texto-fiesta {
+  font-size: 17px;
+}
+
+.boton-servicios:hover {
+  background-color: #111344 !important;
+  color: #FFF !important;
+  border-color: #111344 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.titulo-fiestainf {
+  width: 120%;
+}
+
+.contenedor-tienda {
+  margin-bottom: 80px !important;
+}
+
+/* ===== Estado normal ===== */
+.card-contacto {
+  background-color: #FFF !important;
+  color: #8489E3 !important;
+  border: 3px solid #8489E3 !important;
+  text-align: center;
+  padding: 0px 20px;
+  padding-top: 80px !important;
+  border-radius: 0px;
+  transition: all 0.3s ease-in-out !important;
+  height: 350px;
+}
+
+/* Iconos dentro de la tarjeta */
+.card-contacto .icon-contacto {
+  color: #8489E3 !important;
+  font-size: 60px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-in-out !important;
+}
+
+/* Título */
+.card-contacto .titulo-card {
+  color: #8489E3 !important;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out !important;
+}
+
+/* Texto */
+.card-contacto .texto-card {
+  color: #8489E3 !important;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out !important;
+}
+
+/* ===== Efecto hover (colores invertidos) ===== */
+.card-contacto:hover {
+  background-color: #8489E3 !important;
+  color: #FFF !important;
+  border-color: #8489E3 !important;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* Al hacer hover, los elementos internos también se invierten */
+.card-contacto:hover .icon-contacto,
+.card-contacto:hover .titulo-card,
+.card-contacto:hover .texto-card {
+  color: #FFF !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.page_main_title {
+  margin-top: 100px;
+  background-color: #F1FFFA;
+}
+
+.titulo-payaso {
+  font-size: 30px;
+  margin-left: -80px;
+}
+
+.opcion-tienda {
+  font-size: 18px;
+}
+
+.texto-payaso {
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+
+.padding-payaso {
+  padding: 20px 15px !important;
+}
+
+.margin-titere {
+  margin-top: 0px !important;
+}
+
+.margin-magia {
+  margin-top: 55px !important;
+}
