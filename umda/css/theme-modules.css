@@ -360,6 +360,8 @@ select {
 
 .orderby {
     height: 40px;
+    padding-right: 100px;
+    margin-right: -30px;
 }
 
 .dark-select-transparent {
@@ -1446,7 +1448,7 @@ select {
 .items_filter li {
     display: inline-block;
     position: relative;
-    padding: 0 17px;
+    padding: 0 0px;
 }
 
 .items_filter li:first-child {

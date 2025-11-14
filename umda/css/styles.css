@@ -887,9 +887,10 @@
 
 .btn-whatsapp-banner:hover {
     /* Efecto de HOVER sutil: Fondo blanco semi-transparente */
-    background-color: rgba(255, 255, 255, 0.1); 
+    background-color: #111344; 
     color: #FFFFFF; /* El texto se mantiene blanco */
     cursor: pointer;
+    border-color: #111344;
 }
 
 /* Ajustes de Responsividad (Asegura que el texto y el botón se vean bien en móvil) */
@@ -1156,6 +1157,7 @@
     margin-bottom: 30px;
     padding-top: 0px; 
     padding-left: 0px !important; 
+    padding-bottom: 15px;
 }
 
 /* Estilo del contenedor de cada item de la lista */
@@ -1240,14 +1242,14 @@
 .product-img-wrapper {
   position: relative;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 0px;
   background: #fff;
 }
 
 .product-img-wrapper img {
   display: block;
-  width: 100%;
-  height: 360px;
+  width: 100% !important;
+  height: 250px;
   object-fit: cover;
   -o-object-fit: cover;
   transition: transform 0.35s ease;
@@ -1264,7 +1266,7 @@
   transform: translateX(-50%) translateY(6px);
   display: inline-block;
   padding: 10px 110px;
-  border-radius: 18px;
+  border-radius: 0px;
   background: #111344; 
   color: #FFF;                    
   font-weight: 600;
@@ -1554,4 +1556,781 @@
 
 .margin-magia {
   margin-top: 55px !important;
+}
+
+/* ======== Tarjetas de productos ======== */
+ul.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0px 50px!important;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.product {
+  flex: 1 1 calc(33.333% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  background: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* ======== Contenedor de imagen ======== */
+.product-img-wrapper {
+  position: relative;
+  width: 120%;
+  overflow: hidden;
+  border-radius: 0px;
+}
+
+.product-img-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Efecto al pasar el mouse */
+.product:hover .product-img-wrapper img {
+  transform: scale(1.03);
+}
+
+/* ======== Títulos y precios ======== */
+.product-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  color: #000;
+}
+
+.product-title a {
+  color: #000;
+  text-decoration: none;
+}
+
+.product-title a:hover {
+  color: #8489E3;
+}
+
+/* Precio */
+.price {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 4px;
+}
+
+.product .d-flex {
+  display: flex;
+  flex-direction: column; /* 👉 esto apila el título y el precio */
+  align-items: flex-start;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.payaso-titulo {
+  margin-left: -40px !important;
+  font-size: 18px;
+}
+
+.payaso-precio {
+  margin-left: -65px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.titere-titulo {
+  margin-left: 0px !important;
+  font-size: 18px;
+}
+
+.titere-precio {
+  margin-left: -65px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.magia-titulo {
+  margin-left: 0px !important;
+  font-size: 18px;
+}
+
+.magia-precio {
+  margin-left: -65px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.presentador-titulo {
+  margin-left: 30px !important;
+  font-size: 18px;
+  width: 115%;
+}
+
+.presentador-precio {
+  margin-left: -50px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.dj-titulo {
+  margin-left: -75px !important;
+  font-size: 18px;
+}
+
+.dj-precio {
+  margin-left: -45px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.baile-titulo {
+  margin-left: 0px !important;
+  font-size: 18px;
+}
+
+.baile-precio {
+  margin-left: 35px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+  width: 115%;
+}
+
+.castillo-titulo {
+  margin-left: 60px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.castillo-precio {
+  margin-left: -80px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.power-titulo {
+  margin-left: 60px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.power-precio {
+  margin-left: -130px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.cama-titulo {
+  margin-left: 60px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.cama-precio {
+  margin-left: -80px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.algodon-titulo {
+  margin-left: 60px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.algodon-precio {
+  margin-left: -80px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.piscina-titulo {
+  margin-left: 60px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.piscina-precio {
+  margin-left: -85px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.acua-titulo {
+  margin-left: 60px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.acua-precio {
+  margin-left: -80px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.frozen-titulo {
+  margin-left: 60px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.frozen-precio {
+  margin-left: -130px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.safari-titulo {
+  margin-left: 60px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.safari-precio {
+  margin-left: -130px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.super-titulo {
+  margin-left: 60px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.super-precio {
+  margin-left: -130px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.baby-titulo {
+  margin-left: 60px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.baby-precio {
+  margin-left: -130px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.mini-titulo {
+  margin-left: 55px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.mini-precio {
+  margin-left: -130px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.premium-titulo {
+  margin-left: 55px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.premium-precio {
+  margin-left: -130px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.sillas-titulo {
+  margin-left: 55px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.sillas-precio {
+  margin-left: -120px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.mesa-titulo {
+  margin-left: 55px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.mesa-precio {
+  margin-left: -105px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.carpa-titulo {
+  margin-left: 55px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.carpa-precio {
+  margin-left: -95px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.carpa2-titulo {
+  margin-left: 55px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.carpa2-precio {
+  margin-left: -85px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.tarima-titulo {
+  margin-left: 55px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.tarima-precio {
+  margin-left: -100px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.led-titulo {
+  margin-left: 55px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.led-precio {
+  margin-left: -140px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.globos-titulo {
+  margin-left: 55px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.globos-precio {
+  margin-left: -140px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.letrero-titulo {
+  margin-left: 55px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.letrero-precio {
+  margin-left: -140px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.led3-titulo {
+  margin-left: 55px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.led3-precio {
+  margin-left: -140px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.banderines-titulo {
+  margin-left: 55px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.banderines-precio {
+  margin-left: -140px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.centro-titulo {
+  margin-left: 55px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.centro-precio {
+  margin-left: -145px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.marco-titulo {
+  margin-left: 55px !important;
+  font-size: 18px;
+  width: 125%;
+}
+
+.marco-precio {
+  margin-left: -145px !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+}
+
+.selector-categoria1 {
+  padding-top: 30px !important;
+  width: 100% !important;
+}
+
+.espacio-categoria {
+  padding-bottom: 1px !important;
+}
+
+.espaciado {
+  padding-bottom: 70px !important;
+}
+
+/*
+  ===================================================================
+  Estilos para la uniformidad de la sección Servicios
+  ===================================================================
+*/
+
+/* 1. Contenedor de la Columna (Añade espacio entre las tarjetas) */
+/* Anula cualquier padding o margin raro que pudiera haber antes */
+.contenedor-diseno {
+    padding: 0 20px 0 20px !important; /* Espacio horizontal entre tarjetas */
+    margin-bottom: 40px !important; /* Espacio vertical entre filas de tarjetas */
+    margin-left: 0px !important;
+}
+
+/* 2. Tarjeta de Servicio (Fuerza ancho, altura y esquinas redondeadas) */
+.contenedor-servicios {
+    /* Ancho: Ocupa el 100% del contenedor-diseno (col-lg-6) */
+    width: 100% !important; 
+    
+    /* Altura: Forzamos una altura uniforme para todas las tarjetas. */
+    /* Este valor debe ajustarse según la necesidad, pero 350px funciona bien para el contenido. */
+    height: 300px !important; 
+    
+    /* Resetear márgenes que causaban superposición */
+    margin: 0 !important;
+    
+    /* Configuración de Flexbox para gestionar imagen y texto */
+    display: flex !important;
+    align-items: stretch !important; /* Asegura que la imagen y el texto ocupen toda la altura */
+    
+    /* Estilo de la tarjeta */
+    border-radius: 0px; /* Borde suave para la tarjeta */
+    overflow: hidden; /* Importante para que la imagen no se salga del borde redondeado */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+}
+
+/* 3. Ajuste de las Columnas Internas (Imagen y Texto) */
+/* Asegura que las sub-columnas (col-md-6) ocupen exactamente el 50% de la tarjeta */
+.contenedor-servicios .col-md-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 0; /* Elimina padding que pueda desajustar el 50% */
+}
+
+/* 4. Gestión de Imágenes */
+.contenedor-servicios .col-md-6 img {
+    width: 100% !important;
+    height: 100% !important;
+    /* CLAVE: object-fit: cover fuerza a que la imagen cubra todo el espacio (350px de altura)
+       sin deformarse, aunque se recortará si es necesario. */
+    object-fit: cover !important; 
+}
+
+/* 5. Estilo de la Caja de Contenido (Texto y Botón) */
+.contenedor-servicios .p-25px {
+    height: 100%; /* Asegura que el contenido ocupe toda la altura disponible */
+    padding: 25px !important;
+    display: flex; /* Usar Flexbox para alinear el contenido verticalmente */
+    flex-direction: column;
+    justify-content: space-between; /* Empuja el botón "Agendar asesoría" hacia abajo */
+} 
+
+/* 6. Estilos específicos de Tipografía */
+.titulo1 {
+  font-size: 17px;
+  font-weight: 600; /* Asegura que el título resalte */
+  margin-bottom: 10px;
+}
+
+.texto1 {
+  font-size: 16px;
+  line-height: 1.5;
+  flex-grow: 1; /* Permite que el párrafo de texto ocupe el espacio restante sobre el botón */
+}
+
+/* 7. Estilo del Botón */
+.boton3 {
+  text-align: center;
+  border-radius: 0px;
+  border-color: #333;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.boton3:hover {
+  background-color: #111344;
+  color: #fff;
+  border-color: #111344;
+}
+
+.titulo-art1 {
+  font-size: 80px;
+  width: 200%;
+  margin-left: -350px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+}
+
+.imagen-art1 {
+    overflow: hidden;
+}
+
+.imagen-art1 img {
+    width: 95%;
+    height: auto;
+    transition: transform 0.4s ease; 
+}
+
+.imagen-art1:hover img {
+    transform: scale(1.08);
+}
+
+.titulo-blogart1 {
+  font-size: 32px !important;
+  margin-bottom: 0px !important;
+}
+
+.comentario-texto {
+  font-size: 20px;
+}
+
+/* --- CONTENEDOR GENERAL --- */
+.pd-section {
+  padding: 60px 0;
+}
+
+.pd-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.pd-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* --- GRID DE PRODUCTOS --- */
+.pd-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 💥 4 columnas obligatorias */
+  gap: 40px; /* separación uniforme */
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .pd-grid {
+    grid-template-columns: repeat(2, 1fr); /* tablet */
+  }
+}
+
+@media (max-width: 576px) {
+  .pd-grid {
+    grid-template-columns: 1fr; /* móvil */
+  }
+}
+
+/* --- TARJETAS --- */
+.pd-item {}
+
+.pd-card {
+  background: #fff;
+  border-radius: 0px;
+}
+
+/* Imagen */
+.pd-img-wrap {
+  width: 100%;
+  height: 340px; /* altura igualada */
+  overflow: hidden;
+  border-radius: 0px;
+}
+
+.pd-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Info */
+.pd-info {
+  margin-top: 15px;
+}
+
+.pd-product-title {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.pd-price {
+  font-size: 19px;
+  opacity: 0.7;
+}
+
+/* --- BOTÓN --- */
+.pd-btn-wrap {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.pd-btn {
+  display: inline-block;
+  padding: 12px 35px;
+  border: 2px solid #111344;
+  font-weight: 600;
+  text-decoration: none;
+  color: #111344;
+  border-radius: 0px;
+  font-size: 20px;
+}
+
+.pd-btn:hover {
+  background: #111344;
+  color: #fff;
+}
+
+/* Wrapper para posicionar el overlay */
+.pd-img-wrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 0px;
+}
+
+/* Imagen */
+.pd-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Overlay oculto */
+.whatsapp-hover {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #0A1A39;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Hover */
+.pd-img-wrap:hover img {
+    transform: scale(1.05);
+}
+
+.pd-img-wrap:hover .whatsapp-hover {
+    height: 15%;
+    opacity: 1;
+}
+
+/* Asegurar que el texto del link sea blanco dentro del hover */
+.whatsapp-hover a {
+    color: white !important;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Opcional: al pasar el mouse sobre el botón, se mantiene blanco */
+.whatsapp-hover a:hover {
+    color: white !important;
+}
+
+.com-titulo {
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+/* Contenedor para posicionar correctamente el banner */
+.product-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Imagen */
+.product-img-wrapper img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Banner oculto */
+.hover-banner {
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    width: 100%;
+    height: 0;
+    background-color: #111344;   /* Fondo azul oscuro */
+    color: #FFF;                 /* Texto blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none; 
+}
+
+.hover-banner:hover {
+    color: #FFF;
+}
+
+/* Hover: agrandar imagen y mostrar banner */
+.product-img-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+.product-img-wrapper:hover .hover-banner {
+    height: 20%;     /* Cambia a 100% si quieres que cubra toda la imagen */
+    opacity: 1;
 }
