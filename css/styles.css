@@ -225,14 +225,18 @@
   margin-right: 15px;
 }
 
-.icon-circle:hover {
+.icon-circle:hover  {
   background-color: #FFF;
   color: #8489E3 !important;
 }
 
+.fa-phone-alt:hover, .fa-envelope:hover, .fa-map-marker-alt:hover {
+  color: #8489E3;
+}
+
 .footer-info {
-  margin-bottom: -10px !important;
-  padding: 0px !important;
+  margin-bottom: -10px !important; 
+  padding: 0px !important; 
 }
 
 .icon-circle i {
@@ -352,13 +356,29 @@
   }
 }
 
+.contenedorinisobr {
+  margin: 100px 270px 10px 270px !important;
+}
+
+.titu-sobr {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.blockquote-footer {
+  color: #32333F; 
+  font-weight:400;
+  font-size: 20px;
+}
+
 .texto-relleno {
     width: 100%;
     max-width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     justify-content: center;
-    font-weight: 10 !important;
+    font-weight: 300;
 }
 
 .mb-2 {
@@ -371,26 +391,35 @@
 }
 
 .texto-mel {
-    font-size: 18px;
+    font-size: 16px;
     width: 100%;
-    font-weight: 10 !important;
+    font-weight: 300;;
+}
+
+.padding-bansobr {
+  padding: 80px 0px;
+}
+
+.margin-bq {
+  margin-bottom: 80px !important;
 }
 
 .texto-equipo {
-    font-size: 17px;
-    font-weight: 100 !important;
+    font-size: 16px;
+    font-weight: 300;
     margin-bottom: 40px !important;
 }
 
 .nombre-test {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 600;
   margin-bottom: 0px !important;
   margin-top: 20px;
 }
 
 .descrip-test {
   font-size: 16px; 
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .boton-nosotros {
@@ -1147,7 +1176,7 @@
 
 .titulo-nosotros {
   font-size: 80px; 
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); 
 }
 
 .subtitulo-nosotros {
@@ -1163,7 +1192,8 @@
   padding-top: 50px !important;
   padding-bottom: 30px !important;
   background-color: #D5C7BC !important;
-  margin-top: 60px !important;
+  margin-top: 0px !important;
+  margin-bottom: 50px !important;
 }
 
 .contenedor-agenda2 {
@@ -1194,7 +1224,8 @@
 }
 
 .titulo-sobre {
-  font-size: 28px;
+  font-size: 25px;
+  font-weight: 600;
   margin-left: 9px !important;
   margin-top: -15px;
   margin-bottom: 30px !important;
@@ -1471,55 +1502,62 @@
 
 .equipo-title {
   margin-bottom: 20px !important;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .aliados-title {
   margin-bottom:30px !important;
+  font-size: 25px;
+  font-weight: 600; 
 }
 
 .texto-aliado {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .catering-title {
-  font-size: 25px !important;
-  margin-bottom: 40px !important;
-  margin-left: -830px !important;
+  font-size: 20px !important;
+  font-weight:600;
+  margin-bottom: 20px !important;
+  margin-left: -890px !important;
 }
 
 .deco-title {
-  font-size: 25px !important;
-  margin-bottom: 40px !important;
-  margin-left: -750px !important;
+  font-size: 20px !important;
+  margin-bottom: 20px !important;
+  margin-left: -825px !important;
 }
 
 .contenedor-deco {
   padding-top: 0px !important;
   margin-top: -100px !important;
+  margin-bottom: 0px !important;
 }
 
 .mobi-title {
-  font-size: 25px !important;
-  margin-bottom: 40px !important;
-  margin-left: -860px !important;
+  font-size: 20px !important;
+  margin-bottom: 20px !important;
+  margin-left: -910px !important;
 }
 
 .repo-title {
-  font-size: 25px !important;
-  margin-bottom: 40px !important;
-  margin-left: -850px !important;
+  font-size: 20px !important;
+  margin-bottom: 20px !important;
+  margin-left: -910px !important;
 }
 
 .entretenimiento-title {
-  font-size: 25px !important;
-  margin-bottom: 40px !important;
-  margin-left: -720px !important;
+  font-size: 20px !important;
+  margin-bottom: 20px !important;
+  margin-left: -795px !important;
 }
 
 .perso-title {
-  font-size: 25px !important;
-  margin-bottom: 40px !important;
-  margin-left: -860px !important;
+  font-size: 20px !important;
+  margin-bottom: 20px !important;
+  margin-left: -910px !important;
 }
 
 .boton-agenda1 {
