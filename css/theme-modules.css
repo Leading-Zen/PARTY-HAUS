@@ -3040,7 +3040,8 @@ input[type="submit"],
 }
 
 .testimonials .testimonial {
-    font-size: 16px;
+    font-size: 16px !important;
+    font-weight: 300 !important;
     line-height: 28px;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -3053,7 +3054,7 @@ input[type="submit"],
 
 .testimonials .testimonial .client-name {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .testimonial-img img {

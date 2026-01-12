@@ -23,12 +23,32 @@
 
 /* 🖋️ Estilos para el texto de la navegación */
 .navbar-nav .nav-link {
-    color: #FFFFFF !important; /* Texto de los enlaces en blanco */
-    font-weight: 600; /* Le da un poco más de cuerpo a la tipografía */
+    color: #FFFFFF; /* Texto de los enlaces en blanco */
+    font-weight: 500; /* Le da un poco más de cuerpo a la tipografía */
     padding-right: 5px !important; /* Espacio entre los elementos del menú */
     padding-left: 5px !important; 
-    font-size: 18px;
+    font-size: 16px;
     white-space: nowrap; 
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.custom-nav-link {
+    color: #FFF !important;
+    transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
+/* Color al pasar el mouse (Hover) o al hacer click (Focus/Active) */
+.custom-nav-link:hover,
+.custom-nav-link:focus,
+.custom-nav-link:active {
+    color: #111344 !important;
+}
+
+.contenedor-inicio {
+  margin-left: 60px;
+  margin-top: 100px;
 }
 
 .agendar-header {
@@ -44,22 +64,23 @@
 /* 🟢 Estilos para el Botón "AGENDAR" */
 .btn-agendar {
     /* Fondo del botón (el color celeste/verde agua de la imagen) */
-    background-color: #111344; 
+    background-color: #FFFFFF; 
     border-radius: 50px; /* Bordes redondeados */
-    color: #FFF !important; /* Color de texto más oscuro para el botón */
+    color: #111344 !important; /* Color de texto más oscuro para el botón */
     font-weight: bold;
     text-transform: uppercase;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s; 
     border: none;
     line-height: 0.5 !important; /* Ajusta la altura del texto en el botón */
 }
 
 .btn-agendar:hover {
-    background-color: #9ac2d0;
+    background-color: #111344;
+    color: #FFFFFF !important;
 }
 
 .etcodes-normal-logo {
-    width: 28% !important;
+    width: 180px !important;
     margin-left: -90px !important;
 }
 
@@ -89,30 +110,93 @@
 }
 
 .texto-diseno {
-    font-size: 25px;
+    font-size: 20px;
     width: 100%;
     max-width: 100%;
-    margin-left: -60px !important;
     margin-top: 20px;
+}
+
+.contenedor-prese {
+  margin: 0px 10px 0px 94.5px !important; 
 }
 
 .texto-pres {
-    font-size: 17px;
-    width: 115%;
-    max-width: 150%;
-    font-weight: 50 !important;
-    margin-left: 20px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 100%;
+    font-weight: 300;
+    margin-left: -50px;
     margin-top: 20px;
 }
 
+@media screen and (max-width:1024px) {
+  .texto-pres {
+    font-size: 14px;
+    text-align: center;
+    margin: 0px !important;
+    width: 100%;
+  }
+}
+
 .boton2 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     border-width: 3px;
 }
 
+.boton-verpro {
+  font-size: 16px;
+  font-weight: 600;
+  border-width: 3px;
+  padding: 13px 50px;
+  background-color: transparent;
+  color: #FFF;
+  border-radius: 0px;
+  border: 2px solid #FFF;
+}
+
+.boton-verpro:hover {
+  background-color: #111344;
+  border: #111344;
+  color: #FFF;
+}
+
+@media screen and (max-width:1024px) { 
+  .boton2 {
+    font-size: 14px !important;
+    padding: 12px 40px !important; 
+    background-color: #FFF;
+    color: #111344 !important;
+    justify-content: center !important;
+    margin: 0px !important;
+  }
+}
+
 .boton-presentacion {
-  margin-right: 305px;
+  margin-right: 545px;
+  font-size: 16px;
+  font-weight: 600;
+  border-width: 2px;
+  padding: 13px 50px;
+  border-radius: 0px;
+  border: 2px solid #111344;
+  color: #111344;
+}
+
+.boton-presentacion:hover {
+  background-color: #111344;
+  color: #FFF;
+}
+
+@media screen and (max-width: 1024px) {
+  .boton-presentacion  {
+    margin: 0px;
+    background-color: #111344 !important;
+    color: #FFF !important;
+    border: 0px;
+    font-size: 14px !important;
+    padding: 12px 40px !important;
+  }
 }
 
 .bg-color-darkblue {
@@ -141,6 +225,11 @@
   margin-right: 15px;
 }
 
+.icon-circle:hover {
+  background-color: #FFF;
+  color: #8489E3 !important;
+}
+
 .footer-info {
   margin-bottom: -10px !important;
   padding: 0px !important;
@@ -153,8 +242,8 @@
 
 /* Contenido del texto */
 .contact-text h5.widget-title {
-  font-size: 18px;
-  font-weight: 100 !important;
+  font-size: 16px;
+  font-weight: 300;
   color: #FFF;
   margin-bottom: 3px;
   text-align: left;
@@ -178,7 +267,8 @@
 }
 
 .foot-desc {
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 600 !important;
 }
 
 /* Logo y redes */
@@ -190,25 +280,32 @@
 }
 
 .footer-logo {
-  width: 350px;
+  width: 261px;
   height: auto;
   margin-bottom: -10px !important;
   position: relative;
   text-align: center;
   justify-content: center;
-  margin-left: 550px;
+  margin-left: 590px;
+}
+
+@media screen and (max-width:1024px) {
+  .footer-logo {
+    margin: 0px;
+    justify-content: center; 
+  }
 }
 
 .footer-description {
   font-weight: 500 !important;
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 0px !important;
 }
 
 .description-copyright {
   font-style: italic;
-  font-weight: 100 !important;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 16px;
   margin-bottom: 2px !important;
 }
 
@@ -246,10 +343,13 @@
     font-weight: 300;
 }
 
-.texto-diseno {
-    width: 100%;
-    max-width: 100%;
-    font-size: 25px;
+
+@media screen and (max-width:1024px) {
+  .texto-diseno {
+    font-size: 18px; 
+    text-align: center; 
+    margin: 0px !important;
+  }
 }
 
 .texto-relleno {
@@ -294,8 +394,10 @@
 }
 
 .boton-nosotros {
-  font-size: 20px;
-  font-weight: 800;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 13px 50px !important;
+  align-items: center !important;
 }
 
 .rounded-0 {
@@ -321,7 +423,12 @@
 }
 
 .testimonial-titulo {
-  font-size: 30px;
+  font-size: 25px;
+}
+
+.titban {
+  font-size: 20px !important;
+  font-weight: 600 !important;
 }
 
 .pb-55px {
@@ -332,7 +439,13 @@
 }
 
 .boton-detalles {
-  margin-left: 450px;
+  margin-left: 580px; 
+}
+
+@media screen and (max-width:1024px) {
+  .boton-detalles {
+    margin: 0px;
+  }
 }
 
 .space-footer {
@@ -375,23 +488,23 @@
   position: fixed;
   bottom: 25px;
   right: 25px;
-  background-color: #1ebe5d;
+  background-color: #57A63B;
   color: #fff;
-  border-radius: 35%;
+  border-radius: 28%;
   text-align: center;
-  font-size: 28px;
+  font-size: 42px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
-  width: 60px;
+  width: 60px; 
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; 
 }
 
 .whatsapp-float:hover {
-  background-color: #1ebe5d;
+  background-color: #57A63B;
   transform: scale(1.1);
 }
 
@@ -690,7 +803,7 @@
   border-radius: 0px !important;
   padding: 15px 30px !important;
   background-color: #FFFFFF;
-  color: #000 !important;
+  color: #000;
 }
 
 .contenedor-azul {
@@ -698,9 +811,10 @@
 }
 
 .titulo-carrusel {
-  font-size: 26px;
+  font-size: 20px;
   margin-top: -40px !important;
   margin-bottom: 20px !important;
+  font-weight: 600;
 }
 
 .titulo-cali {
@@ -708,31 +822,25 @@
 }
 
 .texto-carrusel {
-  font-size: 17px;
-  font-weight: 100 !important;
+  font-size: 16px;
+  font-weight: 300;
   margin-bottom: 60px !important;
 }
 
 .texto-italic {
   font-style: italic;
-  font-weight: 100 !important;
+  font-weight: 300;
   font-size: 16px;
 }
 
-.boton3 {
-  color: #000;
-  border-color: #000;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 0px;
-}
 /*inicio de edicion*/
 
 .servicios-title {
-  font-size: 1.8rem !important;
+  font-size: 25px !important;
   font-weight: 600 !important;
   color: #1C1C1C !important;
   margin-bottom: 35px !important;
+  margin-left: 5px;
 }
 
 .bg-color-creamy {
@@ -759,10 +867,10 @@
 
 /* Botón “Agendar asesoría” */
 .boton3 {
-  color: #0A0A23;
-  border: 2px solid #0A0A23;
-  font-weight: 700;
-  padding: 10px 25px;
+  color: #111344;
+  border: 2px solid #111344;
+  font-weight: 600;
+  padding: 10px 50px;
   text-transform: none;
   border-radius: 0;
   background: transparent;
@@ -770,16 +878,10 @@
 }
 
 .boton3:hover {
-  background-color: #0A0A23;
+  background-color: #111344;
   color: #fff;
 }
 
-/* Alineación final del botón de detalles */
-.boton-detalles {
-  border: 2px solid #000;
-  padding: 12px 40px;
-  font-weight: 600;
-}
 
 /* Ajuste para filas */
 .mb-30px {
@@ -797,15 +899,10 @@
 .boton-detalles {
   color: #000;
   border-color: #000;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-  justify-content: center;
-}
-
-.boton-inicio {
-  padding: 15px 50px !important;
-  font-size: 22px !important;
+  padding: 13px 50px !important;
+  font-size: 16px !important;
+  font-weight: 600;
+  border-radius: 0px;
 }
 
 .d-flex {
@@ -847,27 +944,27 @@
 
 .banner-title {
     color: #FFFFFF; 
-    font-size: 40px;
-    font-weight: 700; 
+    font-size: 35px;
+    font-weight: 500; 
     margin-bottom: 20px; 
     line-height: 1.2;
     max-width: 100%; 
     margin-left: 0px;
     margin-right: 0px;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 
 .banner-subtitle {
     color: #FFFFFF; 
-    font-size: 30px !important; 
+    font-size: 25px !important; 
     font-weight: 300; 
     margin-bottom: 40px; 
     line-height: 1.5;
     max-width: 100%; 
     margin-left: 0px;
     margin-right: 0px;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -876,8 +973,8 @@
     color: #FFFFFF; /* Texto blanco */
     /* Borde blanco para el efecto OUTLINE */
     border: 2px solid #FFFFFF; 
-    padding: 15px 35px; 
-    font-size: 21px; 
+    padding: 13px 50px; 
+    font-size: 16px; 
     font-weight: 600; 
     text-transform: uppercase; 
     border-radius: 100px; /* Bordes ligeramente cuadrados/rectangulares */
@@ -924,7 +1021,7 @@
 
 
 .horarios-content-wrapper {
-    padding: 30px 10px; 
+    padding: 30px 10px 0px 10px; 
     max-width: 500px; 
     width: 100%;
     margin: 0 auto; 
@@ -933,14 +1030,14 @@
 
 
 .atencion-title {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 25px;
     color: #FFF;
 }
 
 .atencion-description, .horario-info p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 15px !important;
     font-weight: 100 !important;
@@ -963,16 +1060,15 @@
 .btn-agendar-mapa {
     background-color: transparent; 
     color: #FFFFFF; 
-    border: 4px solid #FFFFFF; 
-    padding: 12px 40px; 
-    font-size: 18px; 
-    font-weight: 600; 
-    text-transform: uppercase; 
+    border: 2px solid #FFFFFF; 
+    padding: 13px 50px; 
+    font-size: 16px; 
+    font-weight: 600;   
     text-decoration: none;
     border-radius: 0px; 
     display: inline-block; 
     transition: all 0.3s ease;
-    margin-top: 70px;
+    margin-top: 100px !important;
 }
 
 .btn-agendar-mapa:hover {
@@ -1011,7 +1107,7 @@
 }
 
 .navbar-right {
-  margin-left: 100px;
+  margin-left: 300px;
 }
 
 .mb-70px {
@@ -1031,8 +1127,8 @@
 }
 
 .banner-agenda {
-  font-size: 18px;
-  font-weight: 100 !important;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 25px;
 }
 
@@ -1065,7 +1161,7 @@
 
 .contenedor-agenda {
   padding-top: 50px !important;
-  padding-bottom: 50px !important;
+  padding-bottom: 30px !important;
   background-color: #D5C7BC !important;
   margin-top: 60px !important;
 }
@@ -2066,7 +2162,7 @@ ul.products {
 
 /* 6. Estilos específicos de Tipografía */
 .titulo1 {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600; /* Asegura que el título resalte */
   margin-bottom: 10px;
 }
@@ -2075,13 +2171,14 @@ ul.products {
   font-size: 16px;
   line-height: 1.5;
   flex-grow: 1; /* Permite que el párrafo de texto ocupe el espacio restante sobre el botón */
+  font-weight: 300;
 }
 
 /* 7. Estilo del Botón */
 .boton3 {
   text-align: center;
   border-radius: 0px;
-  border-color: #333;
+  border-color: #111344;
   transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 
@@ -2123,7 +2220,7 @@ ul.products {
 
 /* --- CONTENEDOR GENERAL --- */
 .pd-section {
-  padding: 60px 0;
+  padding: 50px 0;
 }
 
 .pd-container {
@@ -2133,7 +2230,7 @@ ul.products {
 }
 
 .pd-title {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   margin-bottom: 40px;
   text-align: left;
@@ -2191,14 +2288,15 @@ ul.products {
 }
 
 .pd-product-title {
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
 .pd-price {
-  font-size: 19px;
+  font-size: 16px;
   opacity: 0.7;
+  font-weight: 300;
 }
 
 /* --- BOTÓN --- */
@@ -2209,13 +2307,13 @@ ul.products {
 
 .pd-btn {
   display: inline-block;
-  padding: 12px 35px;
+  padding: 13px 50px;
   border: 2px solid #111344;
   font-weight: 600;
   text-decoration: none;
   color: #111344;
   border-radius: 0px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .pd-btn:hover {
