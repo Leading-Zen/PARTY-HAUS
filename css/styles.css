@@ -491,10 +491,10 @@
 
 .boton-servicios {
   border-radius: 0px !important;
-  padding: 7px;
-  font-size: 20px;
-  font-weight: 600;
-  margin-top: 20px;
+  padding: 10px 50px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 40px;
 }
 
 .imagen-hover1 {
@@ -621,8 +621,8 @@
 }
 
 .texto-cotizacion {
-  font-size: 18px;
-  font-weight: 100 !important;
+  font-size: 16px;
+  font-weight: 300;
   margin-bottom: 10px;
 }
 
@@ -631,7 +631,33 @@
 }
 
 .preguntas-texto {
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.contenedor-preguntas {
+  margin: 0px 100px;
+}
+
+.pregunta {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.fix-image-cover {
+    display: flex !important; /* Asegura que el contenedor hijo rellene el alto */
+    padding: 0 !important;    /* Elimina paddings internos si los hay */
+}
+.fix-image-cover img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Recorta la imagen para llenar sin deformar */
+    display: block !important;
+}
+
+.padding-servi {
+  padding-left: 50px;
+  padding-right: 0px;
 }
 
 .contenedor-servicio {
@@ -1180,8 +1206,12 @@
 }
 
 .subtitulo-nosotros {
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
-  font-size: 30px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); 
+  font-size: 35px;
+}
+
+.contenedor-servi {
+  margin: 0px 100px;
 }
 
 .bg-color-beige {
@@ -1208,19 +1238,90 @@
 }
 
 .titulo-proyecto {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .texto-proyecto {
-  font-size: 18px;
-  width: 130%;
-  margin-left: -115px;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 300;
+  margin: 0px;
+  padding: 0px;
+}
+
+.contenedor-titproy {
+  /* Cambio clave: 'auto' a los lados centra el bloque horizontalmente */
+  margin: 0 auto !important; 
+  padding: 0px !important;
+  width: 100% !important;
+  /* Nota: justify-content solo funciona si usas display:flex, 
+     pero text-align suele ser suficiente para el texto */
+  text-align: center;
+}
+
+.tituprod {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.banner-desc {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 0px;
+}
+
+.items_filter li {
+    display: inline-block; /* Asegura que estén en línea */
+    margin: 0 25px !important; /* Aumenta la separación entre las opciones */
+}
+/* --- Estilo base del texto --- */
+.selector-proyecto {
+    position: relative; /* Necesario para posicionar la barra */
+    cursor: pointer;
+    padding-bottom: 8px; /* Espacio entre texto y barra */
+    transition: all 0.3s ease;
+}
+/* --- La Barra Negra (Indicador) --- */
+.selector-proyecto::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0; /* Empieza invisible (ancho 0) */
+    height: 3px; /* Grosor de la línea */
+    background-color: #000; /* Color Negro */
+    transition: all 0.3s ease; /* Animación de expansión */
+    transform: translateX(-50%); /* Para que crezca desde el centro */
+}
+/* --- Estado Activo (Cuando se selecciona) --- */
+.selector-proyecto.active::after {
+    width: 100%; /* Se expande al ancho completo */
+}
+.selector-proyecto.active {
+    color: #000; /* Opcional: pone el texto negro puro si estaba gris */
+    font-weight: 600; /* Opcional: lo hace un poco más grueso */
 }
 
 .selector-proyecto {
   font-size: 20px;
   font-weight: 600 !important;
+}
+
+.texto-productos-tienda {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.textienda-espec {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.contenedor-categ {
+  padding: 0px !important;
 }
 
 .titulo-sobre {
@@ -1241,8 +1342,8 @@
 }
 
 .subtitulo-servicios {
-  font-size: 30px;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+  font-size: 35px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); 
 }
 
 .contenedor-servicios {
@@ -1255,7 +1356,8 @@
 }
 
 .margin-servicio {
-  padding-top: 15px;
+  padding-top: 20px;
+  padding-left: 40px !important;
 }
 
 .titulo-blog {
@@ -1285,6 +1387,14 @@
     padding-top: 0px; 
     padding-left: 0px !important; 
     padding-bottom: 15px;
+}
+
+.widget-title-tienda {
+  font-size: 20px; 
+  font-weight: 600;
+  color: #333; 
+  margin-bottom: 30px;
+  margin-left: 25px;
 }
 
 /* Estilo del contenedor de cada item de la lista */
@@ -1422,15 +1532,20 @@
 }
 
 .product-title {
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: 600;
-  margin: 0;
+  margin: 0 !important;
   color: #111;
 }
 
 .product-title a {
   color: inherit;
   text-decoration: none;
+  font-size: 16px;
+}
+
+.amount {
+  font-size: 16px;
 }
 
 .product-price {
@@ -1569,11 +1684,12 @@
 }
 
 .titulo-plan {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .texto-plan {
-  font-size: 17px;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .titulo-org {
@@ -1581,15 +1697,15 @@
 }
 
 .texto-org {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .texto-bau {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .texto-fiesta {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .boton-servicios:hover {
@@ -1735,18 +1851,7 @@ ul.products {
 }
 
 /* ======== Títulos y precios ======== */
-.product-title {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-top: 12px;
-  margin-bottom: 4px;
-  color: #000;
-}
 
-.product-title a {
-  color: #000;
-  text-decoration: none;
-}
 
 .product-title a:hover {
   color: #8489E3;
@@ -1760,7 +1865,6 @@ ul.products {
 }
 
 .product .d-flex {
-  display: flex;
   flex-direction: column; /* 👉 esto apila el título y el precio */
   align-items: flex-start;
   margin-top: 10px;
@@ -1769,7 +1873,7 @@ ul.products {
 
 .payaso-titulo {
   margin-left: -40px !important;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .payaso-precio {
@@ -2133,7 +2237,7 @@ ul.products {
 }
 
 .espaciado {
-  padding-bottom: 70px !important;
+  padding-bottom: 0px !important;
 }
 
 /*
