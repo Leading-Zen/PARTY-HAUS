@@ -80,7 +80,7 @@
                 </div>
             </div>
             <!-- Work  -->
-            <div class="pt-70px pb-5px">
+            <div class="pt-70px pb-5px contenedor-proye">
                 <div class="container">
                     <div class="row align-items-center mb-30px">
                         <div class="col-md-10 offset-md-2 text-center contenedor-titproy">
@@ -90,8 +90,12 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
+                            <div class="filter-carousel-wrapper">
+                            <button class="filter-nav prev" id="prevFilter">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
                             <ul class="items_filter text-center">
-                                <li>
+                                <li class="active">
                                     <span data-filter=".bodas" class="selector-proyecto titulo-descr">Bodas</span>
                                 </li>
                                 <li>
@@ -107,8 +111,12 @@
                                     <span data-filter=".eventos" class="selector-proyecto titulo-descr">Eventos corporativos</span>
                                 </li>
                             </ul> 
+                            <button class="filter-nav next" id="nextFilter">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            </div>
                             <!--Fiestas-->
-                            <div class="row et-items masonry_layout mb-20px">
+                            <div class="row et-items masonry_layout mb-20px"> 
                                 <article class="col-sm-6 col-md-6 col-lg-4 et-item fiestas">
                                     <div class="et-banner">
                                         <figure>
@@ -116,15 +124,15 @@
                                         </figure>
                                         <h5 class="tituprod">Fiesta "Noches de Cristal"</h5>
                                         <p class="banner-desc">Septiembre, 2025</p>
-                                    </div>
+                                    </div> 
                                 </article>
-                                <article class="col-sm-6 col-md-6 col-lg-4 et-item fiestas">
+                                <article class="col-sm-6 col-md-6 col-lg-4 et-item fiestas"> 
                                     <div class="et-banner">
                                         <figure>
                                             <img src="images/proyectos/fiestas-tematicas/2.jpg" alt="Sofa Picture" width="855" height="671" />
                                         </figure>
                                         <h5 class="tituprod">Aniversario "Brindis Dorado"</h5>
-                                        <p class="banner-desc">Abril, 2024</p>
+                                        <p class="banner-desc">Abril, 2024</p> 
                                     </div>
                                 </article>
                                 <article class="col-sm-6 col-md-6 col-lg-4 et-item interior fiestas">
@@ -350,7 +358,7 @@
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>  
             </div>
             <!-- Subscribe To The Newsletter  -->
             <div class="bg-color-brown pt-80px pb-55px contenedor-agenda2 contenedor-proyecto">
@@ -378,7 +386,7 @@
   <div class="container">
     <div class="row justify-content-center text-center text-md-start">
 
-      <div class="col-lg-4 col-md-4 mb-30px footer-info">
+      <div class="col-lg-4 col-md-4 margin-foot footer-info">
         <div class="footer-widget contact-item d-flex align-items-center justify-content-center justify-content-md-start">
           <div class="icon-circle me-3">
             <a href="https://api.whatsapp.com/send/?phone=573151234252&text=Hola%2C+quiero+agendar+una+asesoria+con+Party+Haus&type=phone_number&app_absent=0" target="_blank">
@@ -392,7 +400,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-4 mb-30px footer-info">
+      <div class="col-lg-4 col-md-4 margin-foot footer-info">
         <div class="footer-widget contact-item d-flex align-items-center justify-content-center justify-content-md-start email-footer">
           <div class="icon-circle me-3">
             <a href="mailto:contacto@partyhause.com" target="_blank">
@@ -406,7 +414,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-4 mb-30px footer-info">
+      <div class="col-lg-4 col-md-4 margin-foot footer-info">
         <div class="footer-widget contact-item d-flex align-items-center justify-content-center justify-content-md-start ubi-footer">
           <div class="icon-circle me-3">
             <a href="https://www.google.com/maps/place/Barranquilla,+Atl%C3%A1ntico/@10.9847525,-74.9005499,12z/data=!3m1!4b1!4m6!3m5!1s0x8ef42d44d12ae605:0x2633844581b917b2!8m2!3d11.0041072!4d-74.8069813!16zL20vMDJiODRi?entry=tts&g_ep=EgoyMDI1MTEyMy4xIPu8ASoASAFQAw%3D%3D&skid=4f54d9a0-2e61-412d-900b-73767d6482c6" target="_blank" rel="noopener noreferrer">
@@ -481,6 +489,47 @@ document.addEventListener("DOMContentLoaded", function() {
     // Opcional: Marcar el primero como activo por defecto si no hay ninguno
     if (!document.querySelector('.selector-proyecto.active') && filtros.length > 0) {
         filtros[0].classList.add('active');
+    }
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const prevBtn = document.getElementById('prevFilter');
+    const nextBtn = document.getElementById('nextFilter');
+    const filterItems = document.querySelectorAll('.items_filter li');
+    let currentIndex = 0;
+    // Detectar cuál es el filtro activo al cargar la página
+    filterItems.forEach((item, index) => {
+        if (item.classList.contains('active')) {
+            currentIndex = index;
+        }
+    });
+    function updateFilter(newIndex) {
+        // Quitar clase activa del elemento actual
+        filterItems[currentIndex].classList.remove('active');
+        
+        // Calcular el nuevo índice de forma circular (si llega al final vuelve al inicio)
+        currentIndex = (newIndex + filterItems.length) % filterItems.length;
+        // Activar el nuevo elemento
+        const newItem = filterItems[currentIndex];
+        newItem.classList.add('active');
+        // DISPARAR EL FILTRADO:
+        // Buscamos el span con la lógica de filtrado y le hacemos clic programático
+        const filterSpan = newItem.querySelector('.selector-proyecto');
+        if (filterSpan) {
+            filterSpan.click();
+        }
+    }
+    // Solo asignar eventos si los botones existen 
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            updateFilter(currentIndex - 1);
+        });
+        nextBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            updateFilter(currentIndex + 1);
+        });
     }
 });
 </script>

@@ -143,57 +143,6 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
-    /* 1. EL CONTENEDOR (Habilita el scroll horizontal en la fila) */
-    /* Asegúrate de que el div que envuelve a todos los 'contenedor-diseno' tenga la clase 'row' */
-    .row {
-        display: flex !important;
-        flex-wrap: nowrap !important; /* No permite que se bajen los elementos */
-        overflow-x: auto !important;  /* Habilita el scroll hacia los lados */
-        scroll-snap-type: x mandatory; /* Hace que las tarjetas se 'claven' al centro */
-        -webkit-overflow-scrolling: touch; /* Scroll suave en iPhone */
-        padding-bottom: 20px;
-        padding-left: 15px; /* Espacio inicial */
-    }
-    /* Ocultar barra de scroll para que se vea limpio */
-    .row::-webkit-scrollbar { display: none; }
-    .row { -ms-overflow-style: none; scrollbar-width: none; }
-    /* 2. LAS TARJETAS (Cada slide del carrusel) */
-    .contenedor-diseno {
-        flex: 0 0 85% !important; /* Cada tarjeta ocupa el 85% del ancho */
-        max-width: 85% !important;
-        scroll-snap-align: center; /* Se centra al soltar el scroll */
-        margin-right: 15px !important;
-        padding: 0 !important;
-    }
-    /* 3. ESTRUCTURA INTERNA (Imagen arriba, texto abajo) */
-    .contenedor-servicios {
-        display: flex !important;
-        flex-direction: column !important; /* Imagen arriba, Texto abajo */
-        background-color: #f2fcf9 !important; /* El color menta de fondo */
-        height: 100% !important;
-        border: none !important;
-    }
-    .contenedor-servicios .col-md-6 {
-        flex: 0 0 auto !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 0 !important;
-    }
-    /* 4. AJUSTE DE IMAGEN EN EL CARRUSEL */
-    .contenedor-servicios img {
-        width: 100% !important;
-        height: 250px !important; /* Altura sugerida para móvil */
-        object-fit: cover !important; /* Evita que la foto se estire */
-        display: block !important;
-    }
-    /* 5. TEXTO DEL CARRUSEL */
-    .contenedor-servicios .p-25px {
-        padding: 25px 20px !important;
-        text-align: left !important;
-    }
-}
-
 .texto-pres {
     font-size: 16px;
     width: 100%;
@@ -1109,6 +1058,23 @@
     margin-bottom: 20px !important;
 }
 
+@media screen and (max-width: 1024px) {
+  .titulo-contacto  {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+.contenedor-conta {
+  margin: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .contenedor-conta {
+    margin: 20px;
+  }
+}
+
 .texto-contacto {
     color: #7a7a7a;
     font-size: 16px;
@@ -1116,6 +1082,13 @@
     max-width: 100% !important;
     margin: 0 auto;
     line-height: 1.6;
+}
+
+@media screen and (max-width:1024px) {
+  .texto-contacto {
+    font-size: 14px;
+    text-align: center;
+  }
 }
 
 /* Cuadros de contacto */
@@ -1126,6 +1099,13 @@
     transition: all 0.3s ease;
     background-color: #fff;
     height: 100%;
+}
+
+@media screen and (max-width:1024px) {
+  .margin-contacto {
+    margin-bottom: 40px !important;
+    margin-top: 100px;
+  }
 }
 
 .card-contacto:hover {
@@ -1621,9 +1601,21 @@
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); 
 }
 
+@media screen and (max-width:1024px) {
+  .titulo-nosotros {
+    font-size: 60px;
+  }
+}
+
 .subtitulo-nosotros {
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); 
   font-size: 35px;
+}
+
+@media screen and (max-width: 1024px) {
+  .subtitulo-nosotros {
+    display: none;
+  }
 }
 
 .contenedor-servi {
@@ -1633,6 +1625,12 @@
 .bg-color-beige {
   background-color: #FCFAED;
 }
+
+.filter-nav {
+        display: none;
+    }
+
+
 
 .contenedor-agenda {
   padding-top: 50px !important;
@@ -1650,7 +1648,14 @@
 }
 
 .contenedor-proyecto {
-  margin-top: 20px !important;
+  margin-top: 20px !important; 
+}
+
+@media screen and (max-width:1024px) {
+  .contenedor-proyecto {
+    padding-bottom: 10px !important;
+    margin-top: 0px !important;
+  } 
 }
 
 .titulo-proyecto {
@@ -1659,12 +1664,65 @@
   font-weight: 600;
 }
 
+@media screen and (max-width:1024px) {
+  .titulo-proyecto  {
+    font-size: 18px; 
+    text-align:center;
+  }
+}
+
 .texto-proyecto {
   font-size: 16px;
   width: 100%;
   font-weight: 300;
   margin: 0px;
   padding: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+  .texto-proyecto  {
+    font-size: 14px; 
+    text-align: center;
+    margin: 0px !important;
+    padding: 0px 5px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    /* 1. EL CONTENEDOR PADRE: Habilitamos el scroll horizontal */
+    .et-items.masonry_layout {
+        display: flex !important;
+        flex-wrap: nowrap !important; /* Mantenemos todo en una sola línea */
+        overflow-x: auto !important;  /* Habilitamos el desplazamiento lateral */
+        scroll-snap-type: x mandatory; /* Efecto imán para las tarjetas */
+        -webkit-overflow-scrolling: touch;
+        height: auto !important;      /* Reseteamos la altura fija del script de Masonry */
+        padding-bottom: 25px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    /* Ocultar barra de scroll para una estética limpia */
+    .et-items.masonry_layout::-webkit-scrollbar { display: none; }
+    .et-items.masonry_layout { -ms-overflow-style: none; scrollbar-width: none; }
+    /* 2. LOS ARTÍCULOS (Proyectos): Reseteo de posiciones de Masonry */
+    .et-item {
+        flex: 0 0 100% !important;     /* Cada proyecto ocupa el 85% del ancho de la pantalla */
+        max-width: 100% !important;
+        position: relative !important; /* Rompe el absolute del script Masonry */
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;    /* Elimina el posicionamiento calculado por JS */
+        scroll-snap-align: center;     /* Centra la imagen al terminar de deslizar */
+        margin-right: 15px;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    /* 3. COMPATIBILIDAD CON FILTRADO */
+    /* Cuando el sistema oculta elementos (display: none), el flexbox los ignorará y solo scrolleará los visibles */
+    .et-item[style*="display: none"] {
+        display: none !important;
+        flex: none !important;
+    }
 }
 
 .contenedor-titproy {
@@ -1683,10 +1741,57 @@
   margin-top: 20px;
 }
 
+@media screen and (max-width:1024px) {
+  .tituprod {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .filter-carousel-wrapper {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100%;
+        gap: 10px;
+    }
+    .filter-nav {
+        display: block !important; /* Mostramos las flechas SÓLO en móvil */
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: #000;
+        line-height: 1;
+    }
+    /* En móvil, ocultamos todos los filtros... */
+    .items_filter li {
+        display: none !important;
+    }
+    /* ...Y mostramos SOLO el que tenga la clase active */
+    .items_filter li.active {
+        display: block !important;
+        margin: 0 !important;
+    }
+    .selector-proyecto {
+        font-size: 22px !important;
+        font-weight: 700 !important;
+        border-bottom: 3px solid #000;
+        padding-bottom: 5px;
+        white-space: nowrap;
+    }
+}
+
 .banner-desc {
   font-size: 16px;
   font-weight: 300;
   margin-top: 0px;
+}
+
+@media screen and (max-width:1024px) {
+  .banner-desc  {
+    font-size: 14px;
+  }
 }
 
 .items_filter li {
@@ -1721,6 +1826,22 @@
     font-weight: 600; /* Opcional: lo hace un poco más grueso */
 }
 
+@media screen and (max-width:1024px) {
+  .selector-proyecto.active {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .contenedor-proye {
+    padding-top: 40px !important;
+  }
+
+  .selector-proyecto::after {
+    display: none;
+  }
+}
+
 .selector-proyecto {
   font-size: 20px;
   font-weight: 600 !important;
@@ -1731,9 +1852,34 @@
   font-weight: 300;
 }
 
+@media screen and (max-width:1024px) {
+  .texto-productos-tienda  {
+    font-size: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner-tienda {
+    display: none;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .bg-img-100 {
+    margin-top: 100px;
+  }
+}
+
 .textienda-espec {
   font-size: 16px;
   font-weight: 300;
+}
+
+@media screen and (max-width: 1024px) {
+  .textienda-espec {
+    font-size: 14px;
+  }
 }
 
 .contenedor-categ {
@@ -1863,6 +2009,13 @@
 .title-contact {
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
   font-size: 80px;
+}
+
+@media screen and (max-width:1024px) {
+  .title-contact {
+    font-size: 60px; 
+    text-align: center;
+  }
 }
 
 .subtitulo-contacto {
@@ -2139,10 +2292,17 @@
   margin-bottom: 80px !important;
 }
 
+@media screen and (max-width:1024px) {
+  .contenedor-tienda {
+    margin-bottom: 40px !important;
+    margin-top: 100px;
+  }
+}
+
 /* ===== Estado normal ===== */
 .card-contacto {
-  background-color: #FFF !important;
-  color: #8489E3 !important;
+  background-color: #FFF;
+  color: #8489E3;
   border: 3px solid #8489E3 !important;
   text-align: center;
   padding: 0px 20px;
@@ -2152,9 +2312,28 @@
   height: 380px;
 }
 
+@media screen and (max-width: 1024px) {
+  .card-contacto {
+    background-color: #8489E3 !important;
+    color: #FFFF !important;
+  }
+
+  .card-contacto .texto-card {
+    color: #FFF !important;
+  }
+
+  .card-contacto .titulo-card {
+    color: #FFF !important;
+  }
+
+  .card-contacto .icon-contacto {
+    color: #FFF !important;
+  }
+}
+
 /* Iconos dentro de la tarjeta */
 .card-contacto .icon-contacto {
-  color: #8489E3 !important;
+  color: #8489E3;
   font-size: 60px;
   margin-bottom: 15px;
   transition: all 0.3s ease-in-out !important;
@@ -2162,7 +2341,7 @@
 
 /* Título */
 .card-contacto .titulo-card {
-  color: #8489E3 !important;
+  color: #8489E3;
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 10px;
@@ -2171,16 +2350,16 @@
 
 /* Texto */
 .card-contacto .texto-card {
-  color: #8489E3 !important;
+  color: #8489E3;
   font-size: 16px;
   transition: all 0.3s ease-in-out !important;
 }
 
 /* ===== Efecto hover (colores invertidos) ===== */
 .card-contacto:hover {
-  background-color: #8489E3 !important;
+  background-color: #8489E3 ;
   color: #FFF !important;
-  border-color: #8489E3 !important;
+  border-color: #8489E3 ;
   transform: translateY(-5px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
 }
@@ -2245,6 +2424,13 @@
 .titulo-bantienda {
   font-size: 20px;
   font-weight: 600;
+}
+
+@media screen and (max-width:1024px) {
+  .titulo-bantienda {
+    font-size: 18px; 
+    text-align: center;
+  }
 }
 
 /* ======== Tarjetas de productos ======== */
