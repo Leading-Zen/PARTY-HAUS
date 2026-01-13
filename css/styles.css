@@ -1827,6 +1827,11 @@
   margin-top: 150px !important;
 }
 
+.titulo-bantienda {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 /* ======== Tarjetas de productos ======== */
 ul.products {
   display: flex;
