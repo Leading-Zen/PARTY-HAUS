@@ -794,7 +794,7 @@
 
 
 .titulo-contacto {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 600;
     color: #111630;
     margin-bottom: 20px !important;
@@ -802,8 +802,9 @@
 
 .texto-contacto {
     color: #7a7a7a;
-    font-size: 18px;
-    max-width: 80%;
+    font-size: 16px;
+    width: 100%;
+    max-width: 100% !important;
     margin: 0 auto;
     line-height: 1.6;
 }
@@ -1730,10 +1731,10 @@
   border: 3px solid #8489E3 !important;
   text-align: center;
   padding: 0px 20px;
-  padding-top: 80px !important;
+  padding-top: 100px !important;
   border-radius: 0px;
   transition: all 0.3s ease-in-out !important;
-  height: 350px;
+  height: 380px;
 }
 
 /* Iconos dentro de la tarjeta */
@@ -1748,7 +1749,7 @@
 .card-contacto .titulo-card {
   color: #8489E3 !important;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 20px;
   margin-bottom: 10px;
   transition: all 0.3s ease-in-out !important;
 }
@@ -1756,7 +1757,7 @@
 /* Texto */
 .card-contacto .texto-card {
   color: #8489E3 !important;
-  font-size: 1.2rem;
+  font-size: 16px;
   transition: all 0.3s ease-in-out !important;
 }
 
@@ -1783,29 +1784,47 @@
 }
 
 .titulo-payaso {
-  font-size: 30px;
-  margin-left: -80px;
+  font-size: 25px;
+  margin-left: -88px;
 }
 
 .opcion-tienda {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 300;
 }
 
-.texto-payaso {
-  font-size: 17px;
+.precio-detalle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.texto-payaso { 
+  font-size: 16px;
   margin-bottom: 0px;
+  font-weight: 300;
+}
+
+.contenedor-payaso {
+  margin-right: -130px;
+}
+
+.contenedor-payapro {
+  margin: 0px 70px;
 }
 
 .padding-payaso {
-  padding: 20px 15px !important;
+  padding: 25px 35px !important;
+  margin-top: 190px !important;
 }
 
 .margin-titere {
-  margin-top: 0px !important;
+  margin-top: 160px !important;
+  padding: 25px 40px !important;
 }
 
 .margin-magia {
-  margin-top: 55px !important;
+  margin-top: 150px !important;
 }
 
 /* ======== Tarjetas de productos ======== */
@@ -1870,121 +1889,121 @@ ul.products {
   margin-top: 10px;
   width: 100%;
 }
-
+ 
 .payaso-titulo {
-  margin-left: -40px !important;
+  margin-left: -60px !important; 
   font-size: 16px;
 }
 
 .payaso-precio {
-  margin-left: -65px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -85px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .titere-titulo {
-  margin-left: 0px !important;
-  font-size: 18px;
+  margin-left: -30px !important;
+  font-size: 16px;
 }
 
 .titere-precio {
-  margin-left: -65px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -88px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .magia-titulo {
-  margin-left: 0px !important;
+  margin-left: -30px !important;
   font-size: 18px;
 }
 
 .magia-precio {
-  margin-left: -65px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -85px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .presentador-titulo {
   margin-left: 30px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 115%;
 }
 
 .presentador-precio {
-  margin-left: -50px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -70px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .dj-titulo {
-  margin-left: -75px !important;
-  font-size: 18px;
+  margin-left: -90px !important;
+  font-size: 16px;
 }
 
 .dj-precio {
-  margin-left: -45px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -60px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .baile-titulo {
-  margin-left: 0px !important;
-  font-size: 18px;
+  margin-left: -20px !important;
+  font-size: 16px;
 }
 
 .baile-precio {
   margin-left: 35px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  font-size: 16px !important;
+  font-weight: 300;
   width: 115%;
 }
 
 .castillo-titulo {
-  margin-left: 60px !important;
-  font-size: 18px;
+  margin-left: 55px !important;
+  font-size: 16px;
   width: 125%;
 }
 
 .castillo-precio {
-  margin-left: -80px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -100px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .power-titulo {
-  margin-left: 60px !important;
-  font-size: 18px;
+  margin-left: 55px !important;
+  font-size: 16px;
   width: 125%;
 }
 
 .power-precio {
-  margin-left: -130px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -140px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .cama-titulo {
-  margin-left: 60px !important;
-  font-size: 18px;
+  margin-left: 58px !important;
+  font-size: 16px;
   width: 125%;
 }
 
 .cama-precio {
-  margin-left: -80px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -100px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .algodon-titulo {
   margin-left: 60px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 125%;
 }
 
 .algodon-precio {
-  margin-left: -80px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -100px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .piscina-titulo {
@@ -1994,237 +2013,242 @@ ul.products {
 }
 
 .piscina-precio {
-  margin-left: -85px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -100px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .acua-titulo {
   margin-left: 60px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 125%;
 }
 
 .acua-precio {
-  margin-left: -80px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -95px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .frozen-titulo {
   margin-left: 60px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 125%;
 }
 
 .frozen-precio {
-  margin-left: -130px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -140px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .safari-titulo {
-  margin-left: 60px !important;
-  font-size: 18px;
+  margin-left: 55px !important;
+  font-size: 16px;
   width: 125%;
 }
 
 .safari-precio {
-  margin-left: -130px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -140px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .super-titulo {
   margin-left: 60px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 125%;
 }
 
 .super-precio {
-  margin-left: -130px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -140px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .baby-titulo {
   margin-left: 60px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 125%;
 }
 
 .baby-precio {
-  margin-left: -130px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -140px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .mini-titulo {
   margin-left: 55px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 125%;
 }
 
 .mini-precio {
-  margin-left: -130px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -140px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .premium-titulo {
-  margin-left: 55px !important;
-  font-size: 18px;
-  width: 125%;
+  margin-left: 60px !important;
+  font-size: 16px;
+  width: 127%;
 }
 
 .premium-precio {
-  margin-left: -130px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -140px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .sillas-titulo {
   margin-left: 55px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 125%;
 }
 
 .sillas-precio {
-  margin-left: -120px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -130px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .mesa-titulo {
-  margin-left: 55px !important;
-  font-size: 18px;
+  margin-left: 60px !important;
+  font-size: 16px;
   width: 125%;
 }
 
 .mesa-precio {
-  margin-left: -105px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -115px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .carpa-titulo {
   margin-left: 55px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 125%;
 }
 
 .carpa-precio {
-  margin-left: -95px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -105px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .carpa2-titulo {
   margin-left: 55px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 125%;
 }
 
 .carpa2-precio {
-  margin-left: -85px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -95px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .tarima-titulo {
   margin-left: 55px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 125%;
 }
 
 .tarima-precio {
-  margin-left: -100px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -110px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .led-titulo {
   margin-left: 55px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 125%;
 }
 
 .led-precio {
-  margin-left: -140px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -150px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .globos-titulo {
   margin-left: 55px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 125%;
 }
 
 .globos-precio {
-  margin-left: -140px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -150px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .letrero-titulo {
   margin-left: 55px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 125%;
 }
 
 .letrero-precio {
-  margin-left: -140px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -150px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .led3-titulo {
   margin-left: 55px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 125%;
 }
 
 .led3-precio {
-  margin-left: -140px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -150px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .banderines-titulo {
   margin-left: 55px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 125%;
 }
 
 .banderines-precio {
-  margin-left: -140px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -150px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .centro-titulo {
   margin-left: 55px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 125%;
 }
 
 .centro-precio {
-  margin-left: -145px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -150px !important;
+  font-size: 16px !important;
+  font-weight: 300;
 }
 
 .marco-titulo {
   margin-left: 55px !important;
-  font-size: 18px;
+  font-size: 16px;
   width: 125%;
 }
 
 .marco-precio {
-  margin-left: -145px !important;
-  font-size: 18px !important;
-  font-weight: 100 !important;
+  margin-left: -150px !important;
+  font-size: 16px !important;
+  font-weight: 300;
+}
+
+.item-indicador {
+  margin-left: 15px !important;
+  margin-bottom: 10px !important;
 }
 
 .selector-categoria1 {
