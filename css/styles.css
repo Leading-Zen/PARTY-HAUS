@@ -566,16 +566,34 @@
   margin: 100px 270px 10px 270px !important;
 }
 
+@media screen and (max-width:1024px) {
+  .contenedorinisobr {
+    margin: 40px 20px 0px 15px  !important;
+  }
+}
+
 .titu-sobr {
   font-size: 25px;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
+@media screen and (max-width:1024px) {
+  .titu-sobr {
+    font-size: 22px;
+  }
+}
+
 .blockquote-footer {
   color: #32333F; 
   font-weight:400;
   font-size: 20px;
+}
+
+@media screen and (max-width:1024px) {
+  .blockquote-footer  {
+    font-size: 18px;
+  }
 }
 
 .texto-relleno {
@@ -585,6 +603,18 @@
     text-align: center;
     justify-content: center;
     font-weight: 300;
+}
+
+@media screen and (max-width:1024px) {
+  .texto-relleno {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .bg-img-15 {
+    margin-top: 100px !important;
+  }
 }
 
 .mb-2 {
@@ -606,8 +636,20 @@
   padding: 80px 0px;
 }
 
+@media screen and (max-width:1024px) { 
+  .padding-bansobr {
+    padding: 20px 0px 10px 0px;
+  }
+}
+
 .margin-bq {
   margin-bottom: 80px !important;
+}
+
+@media screen and (max-width:1024px) {
+  .margin-bq {
+    margin-bottom: 20px !important;
+  }
 }
 
 .texto-equipo {
@@ -703,7 +745,7 @@
 
 @media screen and (max-width:1024px) {
   .titban {
-    font-size: 18px;
+    font-size: 18px !important;
     text-align: center;
   }
 }
@@ -753,6 +795,21 @@
   font-size: 16px;
   font-weight: 300;
   margin-top: 40px;
+}
+
+@media screen and (max-width:1024px) {
+  .boton-servicios {
+    margin-top: 5px;
+    font-size: 14px; 
+    background-color: #111344;
+    color: #FFF;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .heightservi {
+    height: 300px;
+  }
 }
 
 .imagen-hover1 {
@@ -816,7 +873,7 @@
     font-size: 25px;
   }
   .texto-mel {
-    font-size: 17px;
+    font-size: 14px;
   }
 }
 
@@ -829,14 +886,14 @@
     margin-bottom: 20px !important;
   }
   .texto-equipo {
-    font-size: 17px;
+    font-size: 14px;
   }
   .nombre-test {
-    font-size: 22px !important;
+    font-size: 18px !important;
     margin-bottom: 5px !important; 
   }
   .descrip-test {
-    font-size: 20px !important;
+    font-size: 14px !important;
     margin-top: 0px !important;
   }
 }
@@ -884,8 +941,22 @@
   margin-bottom: 10px;
 }
 
-.texto-servicio1 {
-  font-size: 15px;
+@media screen and (max-width:1024px) {
+  .texto-cotizacion {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .texto-servicio1 {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .chaoase {
+    display:none;
+  }
 }
 
 .preguntas-texto {
@@ -893,13 +964,37 @@
   font-weight: 600;
 }
 
+@media screen and (max-width:1024px) {
+  .preguntas-texto {
+    font-size: 20px;
+  }
+}
+
 .contenedor-preguntas {
   margin: 0px 100px;
+}
+
+@media screen and (max-width:1024px) {
+  .contenedor-preguntas {
+    margin: 0px 20px;
+  }
 }
 
 .pregunta {
   font-size: 20px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .pregunta  {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .accordion .card-block {
+    font-size: 14px;
+  }
 }
 
 .fix-image-cover {
@@ -916,6 +1011,19 @@
 .padding-servi {
   padding-left: 50px;
   padding-right: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+  .padding-servi {
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .padding-servici {
+    padding: 35px 0px 0px 15px;
+  }
 }
 
 .contenedor-servicio {
@@ -1622,6 +1730,18 @@
   margin: 0px 100px;
 }
 
+@media screen and (max-width:1024px) {
+  .contenedor-servi  {
+    margin: 0px 20px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .tituloservi {
+    font-size: 14px;
+  }
+}
+
 .bg-color-beige {
   background-color: #FCFAED;
 }
@@ -1894,13 +2014,38 @@
   margin-bottom: 30px !important;
 }
 
+@media screen and (max-width:1024px) {
+  .titulo-sobre  {
+    font-size: 18px;
+  }
+}
+
 .contenedor-team {
   margin-bottom: 0px !important;
+}
+
+@media screen and (max-width:1024px) {
+  .contenedor-team  {
+    padding-bottom: 0px !important;
+  }
 }
 
 .titulo-servicios {
   font-size: 80px;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); 
+}
+
+@media screen and (max-width: 1024px) {
+  .titulo-servicios {
+    font-size: 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bg-img-about-73 {
+    margin-top: 100px;
+  }
 }
 
 .subtitulo-servicios {
@@ -1920,6 +2065,12 @@
 .margin-servicio {
   padding-top: 20px;
   padding-left: 40px !important;
+}
+
+@media screen and (max-width:1024px) {
+  .margin-servicio {
+    padding: 15px 0px 20px 20px !important;
+  }
 }
 
 .titulo-blog {
@@ -2182,6 +2333,13 @@
 
 .contenedor-catering {
   padding-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+@media screen and (max-width:1024px) {
+  .contenedor-catering {
+    padding-bottom: 0px !important;
+  }
 }
 
 .equipo-title {
@@ -2190,15 +2348,35 @@
   font-weight: 600;
 }
 
+@media screen and (max-width:1024px) {
+  .equipo-title {
+    font-size: 20px !important;
+  }
+}
+
 .aliados-title {
   margin-bottom:30px !important;
   font-size: 25px;
   font-weight: 600; 
 }
 
+@media screen and (max-width:1024px) { 
+  .aliados-title  {
+    font-size:20px !important; 
+    margin-bottom: 20px !important;
+  }
+}
+
 .texto-aliado {
   font-size: 16px;
   font-weight: 300;
+}
+
+@media screen and (max-width:1024px) {
+  .texto-aliado {
+    font-size: 14px;
+    margin-bottom: 0px !important;
+  }
 }
 
 .catering-title {
@@ -2208,16 +2386,39 @@
   margin-left: -890px !important;
 }
 
+@media screen and (max-width:1024px) {
+  .catering-title {
+    margin: 30px 0px 20px 0px !important;
+    text-align: left ;
+    font-size: 18px ;
+  }
+}
+
 .deco-title {
   font-size: 20px !important;
   margin-bottom: 20px !important;
   margin-left: -825px !important;
 }
 
+@media screen and (max-width:1024px) {
+  .deco-title {
+    margin: 30px 0px 20px 0px !important;
+    text-align: left ;
+    font-size: 18px ;
+  }
+}
+
 .contenedor-deco {
-  padding-top: 0px !important;
+  padding-top: 50px !important;
   margin-top: -100px !important;
   margin-bottom: 0px !important;
+  padding-bottom: 0px;
+}
+
+@media screen and (max-width:1024px) {
+  .contenedor-deco {
+    padding-bottom: 0px !important;
+  }
 }
 
 .mobi-title {
@@ -2226,10 +2427,57 @@
   margin-left: -910px !important;
 }
 
+@media screen and (max-width:1024px) {
+  .mobi-title {
+    margin: 30px 0px 20px 0px !important;
+    text-align: left ;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    /* CONTENEDOR: Habilita el desplazamiento horizontal */
+    .equipo-carousel-movil {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 25px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    /* Ocultar barra de scroll para estética limpia */
+    .equipo-carousel-movil::-webkit-scrollbar { display: none; }
+    .equipo-carousel-movil { -ms-overflow-style: none; scrollbar-width: none; }
+    /* TARJETAS: Define el ancho de cada slide */
+    .equipo-carousel-item {
+        flex: 0 0 100% !important; /* Cada tarjeta ocupa el 85% */
+        max-width: 100% !important;
+        scroll-snap-align: center;
+        margin-right: 15px !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+    /* Ajuste de imagen para que no pierda proporción */
+    .equipo-carousel-item img {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
 .repo-title {
   font-size: 20px !important;
   margin-bottom: 20px !important;
   margin-left: -910px !important;
+}
+
+@media screen and (max-width:1024px) {
+  .repo-title {
+    margin: 30px 0px 20px 0px !important;
+    text-align: left ; 
+    font-size: 18px !important;
+  }
 }
 
 .entretenimiento-title {
@@ -2238,10 +2486,26 @@
   margin-left: -795px !important;
 }
 
+@media screen and (max-width:1024px) {
+  .entretenimiento-title {
+    margin: 30px 0px 20px 0px !important;
+    text-align: left ; 
+    font-size: 18px ;
+  }
+}
+
 .perso-title {
   font-size: 20px !important;
   margin-bottom: 20px !important;
   margin-left: -910px !important;
+}
+
+@media screen and (max-width:1024px) {
+  .perso-title {
+    margin: 30px 0px 20px 0px  !important;
+    text-align: left !important;
+    font-size: 18px !important;
+  }
 }
 
 .boton-agenda1 {
@@ -2254,6 +2518,12 @@
 
 .titulo-plan {
   margin-top: 20px;
+}
+ 
+@media screen and (max-width:1024px) {
+  .titulo-plan { 
+    margin-top: 0px;
+  }
 }
 
 .texto-plan {
