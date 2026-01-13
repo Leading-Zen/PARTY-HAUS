@@ -1289,7 +1289,7 @@ select {
     .navbar-dark .hamburger-menu-btn span::before,
     .navbar-dark .hamburger-menu-btn span::after,
     .navbar-dark .hamburger-menu-btn span {
-        background: #393939;
+        background: #FFF;
     }
     .navbar-nav li:not(:last-child) a,
     .navbar-nav .dropdown-menu li:not(:last-child) a {
