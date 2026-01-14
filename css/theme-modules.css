@@ -618,11 +618,7 @@ select {
 .navbar-light .navbar-nav .nav-link {
     color: rgba(0, 0, 0, .7);
 }
-
-.navbar-dark .navbar-nav .nav-link {
-    color: #fff;
-}
-
+ 
 .navbar-dark .hamburger-menu-btn span::before,
 .navbar-dark .hamburger-menu-btn span::after,
 .navbar-dark .hamburger-menu-btn span {
@@ -1266,13 +1262,7 @@ select {
 
 /*Navbar for mobile*/
 
-@media only screen and (max-width: 992px) {
-    .navbar-nav {
-        background: #fff;
-        padding: 2rem 2rem;
-        box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08);
-        -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08);
-    }
+@media screen and (max-width:1024px) {
     .header-middle-logo .navbar-nav {
         margin-bottom: 40px;
     }
@@ -1366,6 +1356,7 @@ select {
         right: 10%;
     }
 }
+
 
 @media only screen and (max-width: 992px) {
     .sidebar-nav .bar-module {

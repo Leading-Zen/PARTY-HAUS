@@ -51,6 +51,12 @@
   margin-top: 100px;
 }
 
+@media screen and (max-width:1024px) {
+  .contenedor-inicio {
+    margin:0px;
+  }
+}
+
 .agendar-header {
   font-size: 20px !important;
 }
@@ -82,6 +88,19 @@
 .etcodes-normal-logo {
     width: 180px !important;
     margin-left: -90px !important;
+}
+
+@media screen and (max-width:1024px) {
+  .etcodes-normal-logo {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .logo-image-header {
+    width: auto !important;
+    height: 37px !important;
+  }
 }
 
 .texto-header {
@@ -173,9 +192,94 @@
   border-width: 3px;
   padding: 13px 50px;
   background-color: transparent;
-  color: #FFF;
+  color: #FFF; 
   border-radius: 0px;
   border: 2px solid #FFF;
+}
+
+@media screen and (max-width:1024px) {
+  .boton-verpro {
+    font-size: 14px;
+    margin: 0px auto !important; 
+    display: block !important;
+    width: fit-content !important;
+    padding: 12px 40px !important;
+    background-color: #FFF;
+    color: #111344 !important;
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .etcodes-normal-logo {
+    width: 106px !important; 
+    height: auto !important;
+    margin-left: 0px !important;  
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+    /* 1. Damos altura al contenedor principal para que no sea tan estrecho */
+    #default-carousel .owl-carousel-item {
+        height: 90vh; /* Ocupa el 75% del alto de la pantalla */
+        min-height: 500px; /* Asegura un mínimo de altura en móviles pequeños */
+        display: flex;
+        align-items: center; /* Centra el contenido verticalmente */
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+    /* 2. Ajustamos la imagen para que cubra todo el espacio sin deformarse */
+    #default-carousel .bg-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    #default-carousel .bg-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* ESTO ES CLAVE: la imagen se recorta para llenar el espacio */
+        object-position: center; /* Centra la parte de la imagen que se muestra */
+    }
+    /* 3. Colocamos el contenido sobre la imagen y lo centramos */
+    #default-carousel .owl-carousel-item-content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        padding: 0 20px;
+        text-align: center; /* Centra el texto horizontalmente */
+    }
+    /* 4. Ajustes de tipografía para que luzca como en tu ejemplo */
+    #default-carousel .texto-header {
+        font-size: 40px !important; /* Aumenta el tamaño del título */
+        line-height: 1.1;
+        margin-bottom: 20px !important;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Mejora legibilidad sobre la foto */
+    }
+    /* 5. Mostrar la descripción (en tu HTML original tenía d-none) */
+    #default-carousel .texto-header2 {
+        display: block !important; 
+        font-size: 18px !important;
+        margin-bottom: 30px !important;
+        padding: 0 10px;
+        line-height: 1.4;
+    }
+    /* Opcional: Añadir un pequeño oscurecimiento a la imagen para que el texto resalte más */
+    #default-carousel .bg-image::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.25); /* Capa oscura sutil */
+        z-index: 1;
+    }
 }
 
 .boton-verpro:hover {
@@ -832,13 +936,13 @@
   position: fixed;
   bottom: 25px;
   right: 25px;
-  background-color: #57A63B;
+  background-color: #57A63B; 
   color: #fff;
   border-radius: 28%;
   text-align: center;
-  font-size: 42px;
+  font-size: 42px; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
+  z-index: 10000;
   width: 60px; 
   height: 60px;
   display: flex;
@@ -850,6 +954,27 @@
 .whatsapp-float:hover {
   background-color: #57A63B;
   transform: scale(1.1);
+}
+
+.navbar-brand {
+    display: flex !important;
+    align-items: center;
+    padding: 0 !important; /* Quitamos paddings de Bootstrap que puedan moverlo */
+    margin: 0 !important;
+}
+/* Aplicamos el estilo a la imagen, asegurando que su contenedor (el link) no la corte */
+.etcodes-normal-logo {
+    width: 180px !important;
+    height: auto !important; /* Para mantener la proporción */
+    margin-left: -90px !important;
+    display: block;
+}
+/* En móvil, resetear los márgenes o anchos si es necesario */
+@media (max-width: 1024px) {
+    .etcodes-normal-logo {
+        width: 90px !important;
+        margin-left: 0 !important; /* En móvil suele ir centrado o a la izquierda sin margen negativo */
+    }
 }
 
 .navbar-dark .navbar-toggler {
@@ -1660,6 +1785,103 @@
 .navbar-right {
   margin-left: 300px;
 }
+
+@media screen and (max-width:1024px) {
+  .navbar-right {
+    margin-left: 50px;
+    background-color: #D9D9D9;
+    color: #757993 !important;
+    width: 250px;
+    font-size: 14px !important;
+    text-align: left !important;
+  }
+
+  .nav-inicio {
+    display:none !important;
+  }
+
+  .agendar-header1 {
+    display:none !important;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%; /* Se coloca justo debajo de la barra superior */
+    left: 50%;
+    transform: translateX(-50%); /* Lo centramos horizontalmente */
+    width: 90%; /* Ajusta el ancho a tu gusto */
+    max-width: 400px; /* Evita que sea demasiado ancho en tablets */
+    z-index: 1000; /* Asegura que esté por encima de todo */
+    padding: 10px 25px; /* Espacio interno del cuadro */
+    transform: translateX(-50%);
+  }
+
+  .navbar-dark .navbar-nav .nav-link  {
+    color: #757993 !important;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left !important; 
+    padding: 10px 0 !important;
+    width: 100%;
+    display: block;
+  }
+
+  .navbar-nav .nav-item {
+    border-bottom: 1px solid #757993;
+  }
+
+  .navbar-nav .nav-item {
+    width: 90%;  
+    margin-left: 30px;            /* 🔑 CLAVE */
+  }
+
+  .navbar-nav .nav-link {
+    width: 100%; /* 🔑 CLAVE */
+    display: block;
+  }
+}
+
+.mobile-agendar-icon {
+    display: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .mobile-agendar-icon {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        margin-right: 0px; /* Espacio con respecto a la hamburguesa */
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease;
+        margin-left: auto; 
+        margin-right: 15px; 
+    }
+    .mobile-agendar-icon:active {
+        transform: scale(0.9);
+    }
+    .mobile-agendar-icon i {
+        width: 25px;
+        height: 25px;
+        display: flex;
+    }
+    
+    /* El botón de texto AGENDAR original se oculta en móvil como ya tenías */
+    .agendar-header1 {
+        display: none !important;
+    }
+}
+/* Ajuste opcional para alinear verticalmente el logo y los iconos */
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 .mb-70px {
   margin: 70px;
@@ -2647,9 +2869,24 @@
   background-color: #F1FFFA;
 }
 
+@media screen and (max-width:1024px) {
+  .page_main_title {
+    padding: 20px;
+    margin-bottom: 40px !important;
+  }
+}
+
 .titulo-payaso {
   font-size: 25px;
   margin-left: -88px;
+}
+
+@media screen and (max-width:1024px) {
+  .titulo-payaso {
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+  }
 }
 
 .opcion-tienda {
@@ -2663,18 +2900,51 @@
   margin-bottom: 10px;
 }
 
+@media screen and (max-width:1024px) {
+  .precio-detalle  {
+    font-size: 18px;
+    margin-top: 25px;
+  }
+}
+
 .texto-payaso { 
   font-size: 16px;
   margin-bottom: 0px;
   font-weight: 300;
 }
 
+@media screen and (max-width:1024px) {
+  .texto-payaso {
+    font-size: 14px;
+  }
+}
+
 .contenedor-payaso {
   margin-right: -130px;
 }
 
+@media screen and (max-width: 1024px) {
+  .contenedor-payaso  {
+    display: none;
+  }
+}
+
 .contenedor-payapro {
   margin: 0px 70px;
+}
+
+@media screen and (max-width:1024px) {
+  .contenedor-payapro {
+    margin: 0px 20px;
+    margin-bottom: 40px !important;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .contenedorimg-products img {
+        height: 450px;
+        object-fit: cover;
+    }
 }
 
 .padding-payaso {
@@ -2682,13 +2952,45 @@
   margin-top: 190px !important;
 }
 
+@media screen and (max-width:1024px) {
+  .padding-payaso {
+    margin-top: 30px !important;
+    padding: 25px 20px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) { 
+  .fa-3x {
+    font-size: 20px !important;
+  }
+
+  .contenedorflechas {
+    margin-top: 40px !important;
+    justify-content: left !important;
+  }
+}
+
 .margin-titere {
   margin-top: 160px !important;
   padding: 25px 40px !important;
 }
 
+@media screen and (max-width:1024px) {
+  .margin-titere {
+    margin-top: 30px !important;
+    padding: 25px 20px !important;
+  }
+}
+
 .margin-magia {
   margin-top: 150px !important;
+}
+
+@media screen and (max-width:1024px) {
+  .margin-magia  {
+    margin-top: 30px !important;
+    padding: 25px 20px !important;
+  }
 }
 
 .titulo-bantienda {
