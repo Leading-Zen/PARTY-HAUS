@@ -2191,13 +2191,13 @@
 
 .texto-productos-tienda {
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 300; 
 }
 
 @media screen and (max-width:1024px) {
   .texto-productos-tienda  {
     font-size: 10px;
-    width: 100%;
+    width: 90%; 
   }
 }
 
@@ -2484,6 +2484,16 @@
   color: inherit;
   text-decoration: none;
   font-size: 16px;
+}
+
+@media screen and (max-width:1024px) {
+  .product-title a {
+    font-size: 14px;
+    margin: 0px !important;
+    text-align: left !important;
+    width: 100% !important;
+    margin-left: 0px !important
+  }
 }
 
 .amount {
@@ -2989,8 +2999,55 @@
 @media screen and (max-width:1024px) {
   .margin-magia  {
     margin-top: 30px !important;
-    padding: 25px 20px !important;
+    padding: 25px 20px !important; 
   }
+}
+
+@media (max-width: 767.98px) {
+    /* 1. Limpiamos el contenedor y quitamos el gap de 50px */
+    ul.products {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap:0px !important; /* Mantenemos espacio arriba/abajo, pero 0 a los lados */
+        margin: 0 !important;
+        padding: 0 10px !important; /* Espacio en los bordes de la pantalla */
+        justify-content: space-between !important; /* Crea el espacio automáticamente entre los 2 productos */
+    }
+    /* 2. Forzamos las 2 columnas ajustando el ancho a un 48% aprox. */
+    ul.products li.product {
+        width: 48% !important; 
+        max-width: 48% !important;
+        flex: 0 0 48% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    /* 3. Ajustamos el contenedor de la imagen */
+    .product-img-wrapper {
+        width: 100% !important;
+        margin-bottom: 8px !important;
+        position: relative !important;
+    }
+    .product-img-wrapper img {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 4 / 5 !important; /* Mantiene la forma vertical de tu referencia */
+        object-fit: cover !important;
+    }
+    /* 4. Alineamos textos uno debajo del otro a la izquierda */
+    .product .d-flex {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+    .product-title {
+        font-size: 14px !important;
+        line-height: 1.2 !important;
+        margin: 5px 0 2px 0 !important;
+    }
+    .price {
+        font-size: 13px !important;
+        color: #757993 !important;
+    }
 }
 
 .titulo-bantienda {
@@ -3009,8 +3066,8 @@
 ul.products {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 0px 50px!important;
+  justify-content: flex-start; 
+  gap: 0px 50px;
   list-style: none;
   padding: 0;
   margin: 0 auto;
@@ -3073,15 +3130,35 @@ ul.products {
   font-size: 16px;
 }
 
+@media screen and (max-width:1024px) {
+  .payati {
+    margin-left: 0px !important;
+  }
+}
+
 .payaso-precio {
   margin-left: -85px !important;
   font-size: 16px !important;
   font-weight: 300;
 }
 
+@media screen and (max-width: 1024px) {
+  .payaso-precio {
+    font-size: 14px !important; 
+    margin-left: 0px !important;
+  }
+}
+
 .titere-titulo {
   margin-left: -30px !important;
   font-size: 16px;
+}
+
+@media screen and (max-width:1024px) {
+  .titere-titulo {
+    margin-left: 0px !important;
+    font-size: 14px !important;
+  }
 }
 
 .titere-precio {
@@ -3090,9 +3167,23 @@ ul.products {
   font-weight: 300;
 }
 
+@media screen and (max-width: 1024px) {
+  .titere-precio {
+    margin-left: 0px !important; 
+    font-size: 14px !important;
+  }
+}
+
 .magia-titulo {
   margin-left: -30px !important;
   font-size: 18px;
+}
+
+@media screen and (max-width:1024px) {
+  .magia-titulo {
+    margin-left: 0px !important; 
+    font-size: 14px !important;
+  }
 }
 
 .magia-precio {
@@ -3101,10 +3192,25 @@ ul.products {
   font-weight: 300;
 }
 
+@media screen and (max-width: 1024px) {
+  .magia-precio {
+    margin-left: 0px !important; 
+    font-size: 14px !important;
+  }
+}
+
 .presentador-titulo {
   margin-left: 30px !important;
   font-size: 16px;
   width: 115%;
+}
+
+@media screen and (max-width:1024px) {
+  .presentador-titulo  {
+    margin-left: 0px !important;
+    font-size: 14px !important; 
+    width: 100% !important;
+  }
 }
 
 .presentador-precio {
@@ -3113,9 +3219,23 @@ ul.products {
   font-weight: 300;
 }
 
+@media screen and (max-width:1024px) {
+  .presentador-precio {
+    margin-left: 0px !important; 
+    font-size: 14px !important;
+  }
+}
+
 .dj-titulo {
   margin-left: -90px !important;
   font-size: 16px;
+}
+
+@media screen and (max-width:1024px) {
+  .dj-titulo {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+  }
 }
 
 .dj-precio {
@@ -3124,9 +3244,23 @@ ul.products {
   font-weight: 300;
 }
 
+@media screen and (max-width:1024px) {
+  .dj-precio  {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+  }
+}
+
 .baile-titulo {
   margin-left: -20px !important;
   font-size: 16px;
+}
+
+@media screen and (max-width:1024px) {
+  .baile-titulo  {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+  }
 }
 
 .baile-precio {
@@ -3136,10 +3270,26 @@ ul.products {
   width: 115%;
 }
 
+@media screen and (max-width:1024px) {
+  .baile-precio {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+}
+
 .castillo-titulo {
   margin-left: 55px !important;
   font-size: 16px;
   width: 125%;
+}
+
+@media screen and (max-width:1024px) {
+  .castillo-titulo  {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
 }
 
 .castillo-precio {
@@ -3148,10 +3298,26 @@ ul.products {
   font-weight: 300;
 }
 
+@media screen and (max-width:1024px) {
+  .castillo-precio {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+}
+
 .power-titulo {
   margin-left: 55px !important;
   font-size: 16px;
   width: 125%;
+}
+
+@media screen and (max-width: 1024px) {
+  .power-titulo  {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
 }
 
 .power-precio {
@@ -3160,10 +3326,26 @@ ul.products {
   font-weight: 300;
 }
 
+@media screen and (max-width:1024px) {
+  .power-precio  {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+}
+
 .cama-titulo {
   margin-left: 58px !important;
   font-size: 16px;
   width: 125%;
+}
+
+@media screen and (max-width: 1024px) {
+  .cama-titulo  {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
 }
 
 .cama-precio {
@@ -3172,10 +3354,26 @@ ul.products {
   font-weight: 300;
 }
 
+@media screen and (max-width:1024px) {
+  .cama-precio {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+}
+
 .algodon-titulo {
   margin-left: 60px !important;
   font-size: 16px;
   width: 125%;
+}
+
+@media screen and (max-width:1024px) {
+  .algodon-titulo  {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
 }
 
 .algodon-precio {
@@ -3184,10 +3382,26 @@ ul.products {
   font-weight: 300;
 }
 
+@media screen and (max-width:1024px) {
+  .algodon-precio {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+}
+
 .piscina-titulo {
   margin-left: 60px !important;
   font-size: 18px;
   width: 125%;
+}
+
+@media screen and (max-width:1024px) {
+  .piscina-titulo  {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
 }
 
 .piscina-precio {
@@ -3196,10 +3410,26 @@ ul.products {
   font-weight: 300;
 }
 
+@media screen and (max-width:1024px) {
+  .piscina-precio {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+}
+
 .acua-titulo {
   margin-left: 60px !important;
   font-size: 16px;
   width: 125%;
+}
+
+@media screen and (max-width:1024px) {
+  .acua-titulo {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
 }
 
 .acua-precio {
@@ -3208,10 +3438,26 @@ ul.products {
   font-weight: 300;
 }
 
+@media screen and (max-width:1024px) {
+  .acua-precio  {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+}
+
 .frozen-titulo {
   margin-left: 60px !important;
   font-size: 16px;
   width: 125%;
+}
+
+@media screen and (max-width:1024px) {
+  .frozen-titulo  {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
 }
 
 .frozen-precio {
@@ -3220,16 +3466,40 @@ ul.products {
   font-weight: 300;
 }
 
+@media screen and (max-width:1024px) {
+  .frozen-precio {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+}
+
 .safari-titulo {
   margin-left: 55px !important;
   font-size: 16px;
   width: 125%;
 }
 
+@media screen and (max-width:1024px) {
+  .safari-titulo {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+}
+
 .safari-precio {
   margin-left: -140px !important;
   font-size: 16px !important;
-  font-weight: 300;
+  font-weight: 300; 
+}
+
+@media screen and (max-width:1024px) {
+  .safari-precio {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
 }
 
 .super-titulo {
@@ -3238,10 +3508,26 @@ ul.products {
   width: 125%;
 }
 
+@media screen and (max-width:1024px) {
+  .super-titulo {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+}
+
 .super-precio {
   margin-left: -140px !important;
   font-size: 16px !important;
   font-weight: 300;
+}
+
+@media screen and (max-width:1024px) {
+  .super-precio {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
 }
 
 .baby-titulo {
@@ -3250,10 +3536,26 @@ ul.products {
   width: 125%;
 }
 
+@media screen and (max-width:1024px) {
+  .baby-titulo {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+}
+
 .baby-precio {
   margin-left: -140px !important;
   font-size: 16px !important;
   font-weight: 300;
+}
+
+@media screen and (max-width:1024px) {
+  .baby-precio {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
 }
 
 .mini-titulo {
@@ -3262,10 +3564,26 @@ ul.products {
   width: 125%;
 }
 
+@media screen and (max-width:1024px) {
+  .mini-titulo {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+}
+
 .mini-precio {
   margin-left: -140px !important;
   font-size: 16px !important;
   font-weight: 300;
+}
+
+@media screen and (max-width:1024px) {
+  .mini-precio {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important; 
+  }
 }
 
 .premium-titulo {
@@ -3274,10 +3592,26 @@ ul.products {
   width: 127%;
 }
 
+@media screen and (max-width:1024px) {
+  .premium-titulo  {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
+}
+
 .premium-precio {
   margin-left: -140px !important;
   font-size: 16px !important;
   font-weight: 300;
+}
+
+@media screen and (max-width:1024px) {
+  .premium-precio {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
 }
 
 .sillas-titulo {
@@ -3286,10 +3620,26 @@ ul.products {
   width: 125%;
 }
 
+@media screen and (max-width:1024px) {
+  .sillas-titulo  {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
+}
+
 .sillas-precio {
   margin-left: -130px !important;
   font-size: 16px !important;
   font-weight: 300;
+}
+
+@media screen and (max-width:1024px) {
+  .sillas-precio  {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
 }
 
 .mesa-titulo {
@@ -3298,10 +3648,26 @@ ul.products {
   width: 125%;
 }
 
+@media screen and (max-width:1024px) {
+  .mesa-titulo  {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
+}
+
 .mesa-precio {
   margin-left: -115px !important;
   font-size: 16px !important;
   font-weight: 300;
+}
+
+@media screen and (max-width:1024px) {
+  .mesa-precio {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
 }
 
 .carpa-titulo {
@@ -3310,10 +3676,26 @@ ul.products {
   width: 125%;
 }
 
+@media screen and (max-width:1024px) {
+  .carpa-titulo {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
+}
+
 .carpa-precio {
   margin-left: -105px !important;
   font-size: 16px !important;
   font-weight: 300;
+}
+
+@media screen and (max-width:1024px) {
+  .carpa-precio {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
 }
 
 .carpa2-titulo {
@@ -3322,10 +3704,26 @@ ul.products {
   width: 125%;
 }
 
+@media screen and (max-width:1024px) {
+  .carpa2-titulo {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
+}
+
 .carpa2-precio {
   margin-left: -95px !important;
   font-size: 16px !important;
   font-weight: 300;
+}
+
+@media screen and (max-width:1024px) {
+  .carpa2-precio {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
 }
 
 .tarima-titulo {
@@ -3334,10 +3732,26 @@ ul.products {
   width: 125%;
 }
 
+@media screen and (max-width:1024px) {
+  .tarima-titulo {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
+}
+
 .tarima-precio {
   margin-left: -110px !important;
   font-size: 16px !important;
   font-weight: 300;
+}
+
+@media screen and (max-width:1024px) {
+  .tarima-precio {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
 }
 
 .led-titulo {
@@ -3346,10 +3760,26 @@ ul.products {
   width: 125%;
 }
 
+@media screen and (max-width:1024px) {
+  .led-titulo {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
+}
+
 .led-precio {
   margin-left: -150px !important;
   font-size: 16px !important;
   font-weight: 300;
+}
+
+@media screen and (max-width:1024px) {
+  .led-precio {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
 }
 
 .globos-titulo {
@@ -3358,10 +3788,26 @@ ul.products {
   width: 125%;
 }
 
+@media screen and (max-width:1024px) {
+  .globos-titulo {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
+}
+
 .globos-precio {
   margin-left: -150px !important;
   font-size: 16px !important;
   font-weight: 300;
+}
+
+@media screen and (max-width:1024px) {
+  .globos-precio {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
 }
 
 .letrero-titulo {
@@ -3370,10 +3816,26 @@ ul.products {
   width: 125%;
 }
 
+@media screen and (max-width:1024px) {
+  .letrero-titulo {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
+}
+
 .letrero-precio {
   margin-left: -150px !important;
   font-size: 16px !important;
   font-weight: 300;
+}
+
+@media screen and (max-width:1024px) {
+  .letrero-precio  {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
 }
 
 .led3-titulo {
@@ -3382,10 +3844,26 @@ ul.products {
   width: 125%;
 }
 
+@media screen and (max-width:1024px) {
+  .led3-titulo {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
+}
+
 .led3-precio {
   margin-left: -150px !important;
   font-size: 16px !important;
   font-weight: 300;
+}
+
+@media screen and (max-width:1024px) {
+  .led3-precio  {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
 }
 
 .banderines-titulo {
@@ -3394,10 +3872,26 @@ ul.products {
   width: 125%;
 }
 
+@media screen and (max-width:1024px) {
+  .banderines-titulo {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
+}
+
 .banderines-precio {
   margin-left: -150px !important;
   font-size: 16px !important;
   font-weight: 300;
+}
+
+@media screen and (max-width:1024px) {
+  .banderines-precio  {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
 }
 
 .centro-titulo {
@@ -3406,10 +3900,26 @@ ul.products {
   width: 125%;
 }
 
+@media screen and (max-width:1024px) {
+  .centro-titulo {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
+}
+
 .centro-precio {
   margin-left: -150px !important;
   font-size: 16px !important;
   font-weight: 300;
+}
+
+@media screen and (max-width:1024px) {
+  .centro-precio  {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
 }
 
 .marco-titulo {
@@ -3418,15 +3928,212 @@ ul.products {
   width: 125%;
 }
 
+@media screen and (max-width:1024px) {
+  .marco-titulo  {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
+}
+
 .marco-precio {
   margin-left: -150px !important;
   font-size: 16px !important;
   font-weight: 300;
 }
 
+@media screen and (max-width:1024px) {
+  .marco-precio {
+    font-size: 14px !important; 
+    margin-left: 0px !important; 
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1024px) {
+    /* 1. Cambiamos la distribución de horizontal a vertical */
+    .shop-item-toolbar {
+        display: flex !important;
+        flex-direction: column !important; /* Apila los elementos */
+        align-items: flex-start !important; /* Alinea todo a la izquierda */
+        gap: 5px !important; /* Espacio entre el bloque de texto y el select */
+        margin-bottom: 30px !important;
+        width: 100% !important;
+        margin-left: 10px;
+    }
+    /* 2. Ajustamos el bloque de texto informativo */
+    .item-result-count {
+        width: 100% !important;
+        text-align: left !important;
+    }
+    .texto-productos-tienda {
+        margin-bottom: 5px !important;
+        font-size: 10px !important;
+    }
+    .textienda-espec {
+        font-size: 14px !important; /* Tamaño similar al de tu imagen de referencia */
+        font-weight: 300 !important;
+    }
+    /* 3. Ajustamos el contenedor del selector */
+    .items-ordering {
+        width: 90% !important;
+    }
+    /* 4. Estilizamos el dropdown para que se vea como el de la imagen */
+    .orderby {
+        width: 100% !important; /* Ocupa todo el ancho disponible */
+        height: 35px !important; /* Le damos altura para que sea fácil de clickear */
+        padding: 0 15px !important;
+        border: 1px solid #75799344 !important; /* Borde gris suave */
+        border-radius: 0px !important;
+        background-color: #ffffff !important;
+        color: #757993 !important;
+        font-size: 14px !important;
+        cursor: pointer !important;
+        appearance: auto !important; /* Mantiene la flecha del navegador */
+    }
+
+    .item-indicador {
+      margin-left: 0px !important;
+      margin-bottom: 5px !important;
+    }
+
+    .shop-item-toolbar .items-ordering  {
+      text-align: left;
+    }
+
+    .espacio-categoria {
+      display: none;
+    }
+
+    .sidebar {
+      display:none;
+    }
+}
+
+.sidebar-rsp {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .sidebar-rsp {
+    display: flex;
+  }
+
+  .categorias-rsp {
+    display: block;
+  }
+
+  .category-list-rsp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .categorias-rsp li {
+    list-style: none;
+  }
+
+  /* BOTÓN */
+  .selector-categoria-rsp {
+    display: flex; /* CLAVE */
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 48px;
+
+    padding: 8px 6px;
+
+    background-color: #e6e6ea;
+    color: #6b7190;
+
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.2; /* CLAVE */
+
+    border-radius: 0;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .selector-categoria-rsp:hover {
+    background-color: #d6d8f0;
+    color: #4a4fc1;
+  }
+
+  .selector-categoria-rsp.active {
+    background-color: #7f86e8;
+    color: #ffffff;
+  }
+
+  /* ÚLTIMO BOTÓN */
+  .selector-categoria-sec-rsp {
+    grid-column: 1 / -1;
+    min-height: 48px;
+  }
+
+}
+
+/* OCULTO POR DEFECTO (DESKTOP) */
+.paginacion-mobile {
+  display: none;
+}
+
+/* SOLO MOBILE */
+@media screen and (max-width: 768px) {
+
+  .paginacion-mobile {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+
+  .paginacion-lista {
+    display: flex;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .pagina-item {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e6e6ea;
+    color: #000;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    cursor: pointer;
+  }
+
+  /* Página activa */
+  .pagina-item.activo {
+    background-color: #0c134f;
+    color: #ffffff;
+  }
+
+  /* Flecha */
+  .pagina-item.siguiente {
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+}
+
 .item-indicador {
-  margin-left: 15px !important;
-  margin-bottom: 10px !important;
+  margin-left: 15px;
+  margin-bottom: 10px;
 }
 
 .selector-categoria1 {

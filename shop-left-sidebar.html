@@ -111,8 +111,24 @@
             <li><span data-filter=".venta" class=" selector-categoria selector-categoria1">Venta de Decoraciones y Accesorios</span></li>
           </ul>
         </div>
-      </div>
+      </div> 
     </div>
+
+  <div class="col-lg-3 sidebar-rsp">
+    <div class="bg-gray-rsp widget-rsp px-40-rsp contenedor-categ-rsp">
+      <div class="pt-40-rsp pb-50-rsp espacio-categoria-rsp">
+        <ul class="list-unstyled-rsp items-filter-rsp categorias-rsp text-start-rsp">
+          <div class="category-list-rsp">
+            <li><span data-filter=".animacion" class="selector-categoria-rsp">Animación y Espectáculos</span></li>
+            <li><span data-filter=".alquilerfiestas" class="selector-categoria-rsp">Alquileres para Fiestas Infantiles</span></li>
+            <li><span data-filter=".decoracion" class="selector-categoria-rsp">Decoración y Montajes Temáticos</span></li>
+            <li><span data-filter=".mobiliario" class="selector-categoria-rsp">Alquiler de Mobiliario y Elementos</span></li>
+        </div>
+        <li><span data-filter=".venta" class="selector-categoria-rsp selector-categoria-sec-rsp">Venta de Decoraciones y Accesorios</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
     <!-- Grid de productos -->
     <div class="col-lg-9">
@@ -129,7 +145,7 @@
           <select name="orderby" class="orderby">
             <option value="menu_order" selected="selected">
               Orden predeterminado
-            </option>
+            </option> 
             <option value="popularity">Sort by popularity</option>
             <option value="rating">Sort by average rating</option>
             <option value="date">Sort by newness</option>
@@ -151,7 +167,7 @@
             </a>
           </div>
           <div class="d-flex justify-content-between align-items-center">
-            <h6 class="product-title payaso-titulo"><a href="portfolio-single-small-carousel.html">Payaso Profesional</a></h6>
+            <h6 class="product-title payaso-titulo payati"><a href="portfolio-single-small-carousel.html">Payaso Profesional</a></h6>
             <span class="price payaso-precio"><span class="amount"><span class="currencySymbol">$</span>220.000 / hora</span></span>
           </div>
         </li>
@@ -212,7 +228,7 @@
           </div>
           <div class="d-flex justify-content-between align-items-center">
             <h6 class="product-title baile-titulo"><a href="#">Show de Baile Temático</a></h6>
-            <span class="price baile-precio"><span class="amount"><span class="currencySymbol">$</span>450.000 / 4 bailarinas(es)</span></span>
+            <span class="price baile-precio"><span><span class="currencySymbol">$</span>450.000 / 4 bailarinas(es)</span></span>
           </div>
         </li>
 
@@ -515,34 +531,14 @@
     </div>
   </div>
 </div>
-
-<!-- JS para filtrado -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const filters = document.querySelectorAll(".selector-categoria");
-    const items = document.querySelectorAll(".product");
-
-    filters.forEach((filter) => {
-      filter.addEventListener("click", () => {
-        // Quitar clase activa de todos
-        filters.forEach((f) => f.classList.remove("active"));
-        filter.classList.add("active");
-
-        const filterValue = filter.getAttribute("data-filter");
-
-        items.forEach((item) => {
-          if (filterValue === "*" || item.matches(filterValue)) {
-            item.style.display = "block";
-            item.classList.add("fade-in");
-          } else {
-            item.style.display = "none";
-            item.classList.remove("fade-in");
-          }
-        });
-      });
-    });
-  });
-</script>
+<div class="paginacion-mobile">
+  <ul class="paginacion-lista">
+    <li class="pagina-item activo">1</li>
+    <li class="pagina-item">2</li>
+    <li class="pagina-item">3</li>
+    <li class="pagina-item siguiente">&gt;</li>
+  </ul>
+</div>
             <!-- Subscribe To The Newsletter  -->
             <div class="bg-color-beige pt-80px pb-55px contenedor-agenda banner-tienda">
                 <div class="container"> 
@@ -561,7 +557,7 @@
                     </div>
                 </div>
             </div>
-             <!-- footer -->
+             <!-- footer --> 
 <footer class="web-footer footer bg-color-darkblue all-text-content-white">
 
   <!-- Sección de Contacto (con fondo más claro y bordes redondeados) -->
@@ -668,4 +664,40 @@
     <script type="text/javascript" src="js/plugins/twitterFetcher_min.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyAE_JprYsi2sHzUcl8u1DbcUgQnDveJWs4"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const filters = document.querySelectorAll(".selector-categoria");
+    const items = document.querySelectorAll(".product");
+
+    filters.forEach((filter) => {
+      filter.addEventListener("click", () => {
+        // Quitar clase activa de todos
+        filters.forEach((f) => f.classList.remove("active"));
+        filter.classList.add("active");
+
+        const filterValue = filter.getAttribute("data-filter");
+
+        items.forEach((item) => {
+          if (filterValue === "*" || item.matches(filterValue)) {
+            item.style.display = "block";
+            item.classList.add("fade-in");
+          } else {
+            item.style.display = "none";
+            item.classList.remove("fade-in");
+          }
+        });
+      });
+    });
+  });
+</script>
+<script>
+  document.querySelectorAll('.selector-categoria-rsp').forEach(function(item) {
+    item.addEventListener('click', function() {
+      document.querySelectorAll('.selector-categoria-rsp').forEach(function(el) {
+        el.classList.remove('active');
+      });
+      this.classList.add('active');
+    });
+  });
+</script>
 </body>
